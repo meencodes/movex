@@ -3,15 +3,21 @@
     font-family: 'Sukhumvit';
 }
 
+body {
+  margin: 0;
+}
+
 #app {
     font-family: 'Sukhumvit';
 }
 
 a {
-    color: black;
+    color: rgb(228, 228, 228);
     margin-right: 25px;
     text-decoration: none;
   }
   a:hover {
-    color: rgb(250,235,00);
+    color: rgb(216, 69, 69);
+    border-bottom: 1px solid rgb(216, 69, 69);
   }
+  

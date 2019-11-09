@@ -6,6 +6,7 @@ import AtmBit from '../pages/AtmBit'
 import Watch from '../pages/Watch'
 import Card from '../pages/Card'
 import Cryptomap from '../pages/Cryptomap'
+import Blockchain from '../pages/Blockchain'
 
 const routes = () => (
     <Switch>
@@ -14,6 +15,7 @@ const routes = () => (
         <Route path='/watch' component={Watch} />
         <Route path='/card' component={Card} />
         <Route path='/cryptomap' component={Cryptomap} />
+        <Route path='/blockchain' component={Blockchain} />
     </Switch>
 )
 
