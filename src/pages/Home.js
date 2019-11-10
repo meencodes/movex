@@ -5,11 +5,12 @@ import Footer from '../components/Footer'
 import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
 
 import { Typography, Container } from '@material-ui/core'
+import arrow from '../assets/images/tooltip/arrow_down.svg'
 
 export class Home extends Component {
     render() {
         return (
-            <div>
+            <div id='top'>
                 <Header />
 
                 <Info1>
@@ -18,22 +19,37 @@ export class Home extends Component {
                             <BgImage src={banner} alt="saron" sizes="180vh" />
                         </InfoImg1>
                     </Session1>
+
+                    <Session2>
+                        <Message>
+                            —<br />MoveX,<br />HashBx Global.<br />
+                        </Message>
+                        <a href="#Container" className="action">
+                            <span className="action_icon">
+                                <img src={arrow} style={{ width: '23px', height: '23px' }} alt="action" />
+                            </span>
+                            <span className="action_message">Contents</span>
+                        </a>
+                    </Session2>
                 </Info1>
+
+
+
                 <br />
                 <Container maxWidth='xl'>
-                    <Typography component="div" style={{ backgroundColor: 'red', minHeight: '100px', padding: '5vh', textAlign: 'center', fontFamily: 'Sukhumvit'}}>
+                    <Typography component="div" style={{ backgroundColor: 'white', minHeight: '100px', padding: '5vh', textAlign: 'center', fontFamily: 'Sukhumvit' }}>
                         Content No.1
                     </Typography>
                 </Container>
                 <br />
                 <Container>
-                    <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit'}}>
+                    <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit' }}>
                         Content No. 2
                     </Typography>
                 </Container>
                 <br />
-                <Container>
-                    <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit'}}>
+                <Container id='Container'>
+                    <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit' }}>
                         Content No. 3
                     </Typography>
                 </Container>
@@ -82,11 +98,16 @@ const BgImage = styled.img`
   filter: brightness(70%);
 `
 
-const Content = styled.div`
-    position: relative;
-    text-align: center;
+/* ----- Session Arrow ----------*/
+
+const Session2 = styled.div`
+  left: 5vw;
+  bottom: 5vh;
+  position: absolute;
 `
-const ContentI = styled.div`
-    width: 100%;
-    background: rgb(109,6,8,9);
+const Message = styled.div`
+  font-size: 8vmin;
+  line-height: .85;
+  margin-bottom: 1rem;
+  color: white;
 `

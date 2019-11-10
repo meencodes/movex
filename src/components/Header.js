@@ -9,7 +9,8 @@ class Header extends Component {
             <Nav>
                 <Navbar>
                     <NavbarLogo>
-                        <Link to='/'><LogoImg src={Logo} alt='logo'/></Link>
+                    <a href="#top" className="action"><LogoImg src={Logo} alt='logo'/></a>
+                        {/* <Link to='/'><LogoImg src={Logo} alt='logo'/></Link> */}
                     </NavbarLogo>
 
                     <NavbarButton>
