@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
 
-import Typography from '@material-ui/core/Typography'
-import Container from '@material-ui/core/Container';
+import { Typography, Container } from '@material-ui/core'
 
 export class Home extends Component {
     render() {
@@ -16,15 +16,31 @@ export class Home extends Component {
                     <Session1>
                         <InfoImg1>
                             <BgImage src={banner} alt="saron" sizes="180vh" />
-
                         </InfoImg1>
                     </Session1>
                 </Info1>
-
-                <Container fixed>
-                    555
-                    {/* <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} /> */}
+                <br />
+                <Container maxWidth='xl'>
+                    <Typography component="div" style={{ backgroundColor: 'red', minHeight: '100px', padding: '5vh', textAlign: 'center', fontFamily: 'Sukhumvit'}}>
+                        Content No.1
+                    </Typography>
                 </Container>
+                <br />
+                <Container>
+                    <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit'}}>
+                        Content No. 2
+                    </Typography>
+                </Container>
+                <br />
+                <Container>
+                    <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit'}}>
+                        Content No. 3
+                    </Typography>
+                </Container>
+                <br />
+
+
+                <Footer />
             </div>
         )
     }

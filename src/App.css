@@ -1,5 +1,5 @@
 @font-face {
-    src: url(./assets/fonts/SukhumvitSet-Medium.ttf);
+    src: url(./assets/fonts/SukhumvitSet-Light.ttf);
     font-family: 'Sukhumvit';
 }
 
@@ -12,12 +12,12 @@ body {
 }
 
 a {
-    color: rgb(228, 228, 228);
-    margin-right: 25px;
+    color: rgb(236, 236, 236);
+    margin-right: 35px;
     text-decoration: none;
   }
   a:hover {
     color: rgb(216, 69, 69);
-    border-bottom: 1px solid rgb(216, 69, 69);
+    /* border-bottom: 1px solid rgb(216, 69, 69); */
   }
   
