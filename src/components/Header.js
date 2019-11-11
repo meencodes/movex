@@ -14,7 +14,7 @@ class Header extends Component {
                     </NavbarLogo>
 
                     <NavbarButton>
-                        {/* <Link to='/'>จากกระแสเงินดิจิทัล</Link> */}
+                        {/* <Link to='/'>HOME</Link> */}
                         <Link to='/atmbitcoin'>ATM Bitcoin</Link>
                         <Link to='/watch'>Watch</Link>
                         <Link to='/card'>Card</Link>
@@ -39,7 +39,7 @@ const Nav = styled.div`
   background: rgba(0,0,0,0.8);
 `
 const Navbar = styled.div`
-  padding: 1.5vh 5vw;
+  padding: 1.5vh 6vw;
   display: flex;
   align-self: center;
   background: rgba(26,26,26,0);

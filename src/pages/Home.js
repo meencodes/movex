@@ -7,6 +7,17 @@ import banner from '../assets/images/architectural-design-architecture-buildings
 import { Typography, Container } from '@material-ui/core'
 import arrow from '../assets/images/tooltip/arrow_down.svg'
 
+const Section = styled(Container)`
+    && {
+        background-color: white;
+    }
+`
+const Section1 = styled(Container)`
+    && {
+        background-color: rgba(248,248,248,1);
+    }
+`
+
 export class Home extends Component {
     render() {
         return (
@@ -35,18 +46,17 @@ export class Home extends Component {
 
 
 
-                <br />
-                <Container maxWidth='xl'>
-                    <Typography component="div" style={{ backgroundColor: 'white', minHeight: '100px', padding: '5vh', textAlign: 'center', fontFamily: 'Sukhumvit' }}>
+                <Section maxWidth='xl'>
+                    <Typography component="div" style={{ minHeight: '100px', padding: '5vh', textAlign: 'center', fontFamily: 'Sukhumvit' }}>
                         Content No.1
                     </Typography>
-                </Container>
-                <br />
-                <Container>
-                    <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit' }}>
-                        Content No. 2
+                </Section>
+                
+                <Section1 maxWidth='xl'>
+                    <Typography component="div" style={{ minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'black', fontFamily: 'Sukhumvit' }}>
+                        MoveX
                     </Typography>
-                </Container>
+                </Section1>
                 <br />
                 <Container id='Container'>
                     <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit' }}>

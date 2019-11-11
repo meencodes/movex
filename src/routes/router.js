@@ -8,6 +8,8 @@ import Card from '../pages/Card'
 import Cryptomap from '../pages/Cryptomap'
 import Blockchain from '../pages/Blockchain'
 
+import NotFound from '../components/NotFound'
+
 const routes = () => (
     <Switch>
         <Route exact path='/' component={Home}/>
@@ -16,6 +18,7 @@ const routes = () => (
         <Route path='/card' component={Card} />
         <Route path='/cryptomap' component={Cryptomap} />
         <Route path='/blockchain' component={Blockchain} />
+        <Route component={NotFound} />
     </Switch>
 )
 
