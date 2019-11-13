@@ -7,6 +7,11 @@ import banner from '../assets/images/architectural-design-architecture-buildings
 import { Typography, Container } from '@material-ui/core'
 import arrow from '../assets/images/tooltip/arrow_down.svg'
 
+import TrendingUpIcon from '@material-ui/icons/TrendingUpRounded';
+import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRounded';
+import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
+import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
+
 import '../App.css'
 
 const Section = styled(Container)`
@@ -19,6 +24,9 @@ const Section1 = styled(Container)`
         background-color: rgba(248,248,248,1);
         min-height: 100px;
     }
+`
+const TrendingUp = styled(TrendingUpIcon)`
+    font-size: 10rem;
 `
 
 export class Home extends Component {
@@ -56,7 +64,7 @@ export class Home extends Component {
                         <Message>
                             —<br />MoveX,<br />HashBx Global.<br />
                         </Message>
-                        <a href="#Container" className="action">
+                        <a href="#about-section" className="action">
                             <span className="action_icon">
                                 <img src={arrow} style={{ width: '23px', height: '23px' }} alt="action" />
                             </span>
@@ -67,7 +75,7 @@ export class Home extends Component {
 
 
 
-                <Section maxWidth='xl'>
+                <Section maxWidth='xl' id='click'>
                     <Typography component="div" style={{ minHeight: '100px', padding: '5vh', textAlign: 'center', fontFamily: 'Sukhumvit' }}>
                         Content No.1
                     </Typography>
@@ -80,6 +88,9 @@ export class Home extends Component {
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
+                                    <a href>
+                                        <TrendingUp />
+                                    </a>
                                     <h2>FAST ROI</h2>
                                     <p>Attractive product pricing for a faster return on investment allowing your company to scale faster.</p>
                                 </div>
@@ -92,6 +103,9 @@ export class Home extends Component {
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
+                                    <a href>
+                                        <SettingsRoundedIcon />
+                                    </a>
                                     <h2>24/7 Services</h2>
                                     <p>Attractive product pricing for a faster return on investment allowing your company to scale faster.</p>
                                 </div>
@@ -111,6 +125,9 @@ export class Home extends Component {
                             </div>
                             <div className='about-post'>
                                 <div className='about-post-content'>
+                                    <a href>
+                                        <SupervisorAccountRoundedIcon />
+                                    </a>
                                     <h2>Support</h2>
                                     <p>Attractive product pricing for a faster return on investment allowing your company to scale faster.</p>
                                 </div>
@@ -131,6 +148,9 @@ export class Home extends Component {
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
+                                    <a href>
+                                        <ForumRoundedIcon />
+                                    </a>
                                     <h2>OEM Service provider</h2>
                                     <p>Attractive product pricing for a faster return on investment allowing your company to scale faster.</p>
                                 </div>
@@ -138,7 +158,7 @@ export class Home extends Component {
                                     <h1>OEM</h1>
                                     <span></span>
                                     <p>
-                                    We provide OEM services based on the product that customer request and rebranding as the customer own brand. In the OEM part we do have different kinds of products available.
+                                        We provide OEM services based on the product that customer request and rebranding as the customer own brand. In the OEM part we do have different kinds of products available.
                                     </p>
                                 </div>
                             </div>

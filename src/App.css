@@ -64,6 +64,7 @@ a {
   .action:hover .action_icon:before{
     transform: translate(-50%,-50%) scale(1.1);
     background: rgb(238,67,45);
+    color: #ffffff;
   }
 
 
@@ -251,8 +252,8 @@ a {
 }
 
 #about-section .about-box .about-post:hover .about-post-content a {
-    background: #1f57a1;
-    border: 1px solid #1f57a1;
+    background: rgb(238,67,45);
+    border: 1px solid rgb(238,67,45);
     color: #ffffff;
 }
 
