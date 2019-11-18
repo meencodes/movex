@@ -1,55 +1,64 @@
 import React, { Component } from 'react';
-import Styled from 'styled-components';
+import '../style.css'
 
 class Footer extends Component {
     render() {
         return (
-            <PageFooter>
-                <Contact>
-                    <ContactMenu>
-                        <ContactRow>
-                           
-                            55555
-                        </ContactRow>
-                    </ContactMenu>
-                </Contact>
-                <Copyright>
-                    <ContactMenu>
-                        <p>Copyright © 2019 HashBx Global Co.,Ltd All Rights Reserved.</p>
-                    </ContactMenu>
-                </Copyright>
-            </PageFooter>
+            <div className="site-footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-12 col-md-6">
+                            <h6>About</h6>
+                            <p className="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+                        </div>
+
+                        {/* <div className="col-xs-6 col-md-3">
+                            <h6>Categories</h6>
+                            <ul className="footer-links">
+                                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+                            </ul>
+                        </div> */}
+
+                        <div className="col-xs-6 col-md-3">
+                            <h6>Quick Links</h6>
+                            <ul className="footer-links">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Kiosk BTM</a></li>
+                                <li><a href="">Watch</a></li>
+                                <li><a href="">Card</a></li>
+                                <li><a href="">Cryptomap</a></li>
+                                <li><a href="">Blockchain</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-8 col-sm-6 col-xs-12">
+                            <p className="copyright-text">Copyright &copy; 2019 All Rights Reserved by &nbsp;<a href="#">Hashbx Global Co., LTD</a>.
+                            </p>
+                        </div>
+
+                        <div className="col-md-4 col-sm-6 col-xs-12">
+                            <ul className="social-icons">
+                                <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
+                                <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li>
+                                <li><a className="youtube" href="#"><i className="fa fa-youtube"></i></a></li>
+                                {/* <li><a className="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li> */}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         )
     }
 }
 
 export default Footer;
-
-const PageFooter = Styled.div`
-  width: 100%;
-  min-height: 100px;
-  background: rgba(0,0,0,0.8);
-  bottom: 0;
-  left: 0;
-  right: 0;
-`
-const Copyright = Styled.div`
-    overflow: hidden;
-    font-size: 14px;
-    color: rgb(214,214,214);
-    display: flex;
-`
-const Contact = Styled.div`
-    width: 100%;
-    border-bottom: 1px #616161 solid;
-`
-const ContactMenu = Styled.div`
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-`
-const ContactRow = Styled.div`
-    margin-right: -15px;
-    margin-left: -15px;
-`

@@ -21,6 +21,7 @@ a {
 }
 a:hover {
   color: rgb(238,67,45);
+  text-decoration: none;
 }
   
   .action {
@@ -34,7 +35,7 @@ a:hover {
     z-index: 0;
     position: relative;
     line-height: 0;
-  
+
     align-items: center;
   }
   .action_icon::before {

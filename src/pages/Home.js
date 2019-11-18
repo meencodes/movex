@@ -48,7 +48,7 @@ export class Home extends Component {
                         <Message>
                             —<br />MoveX,<br />HashBx Global.<br />
                         </Message>
-                        <a href="#click" className="action">
+                        <a href="#about-section" className="action">
                             <span className="action_icon">
                                 <img src={arrow} style={{ width: '23px', height: '23px' }} alt="action" />
                             </span>
@@ -63,7 +63,7 @@ export class Home extends Component {
 
                 {/*!--------- Section Product ----------!*/}
 
-                <SectionProduct maxWidth='none' id='click'>
+                {/* <SectionProduct maxWidth='none' id='click'>
                     <Typography style={{ padding: '8vh', fontFamily: 'Sukhumvit', textAlign: 'center', fontSize: '4vmin' }}>Our Products</Typography>
                     <ProductLayout component="div">
 
@@ -73,7 +73,7 @@ export class Home extends Component {
                                     <img src={btm} alt='' style={{ width: '400px', height: '400px' }} />
                                 </GridLayout>
                                 <GridLayout item xs={12} sm={6}>
-                                    <p style={{ padding: '8vw' }}><h2>Kiosk BTM</h2>A Bitcoin ATM (Automated Teller Machine) is a kiosk that allows a person to purchase Bitcoin through QR Code on the application.Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
+                                    <p style={{ padding: '8vw' }}><h1>Kiosk BTM</h1>A Bitcoin ATM (Automated Teller Machine) is a kiosk that allows a person to purchase Bitcoin through QR Code on the application.Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
                                 </p>
                                 </GridLayout>
                             </Grid>
@@ -136,7 +136,7 @@ export class Home extends Component {
                             </GridLayout>
                         </Grid>
                     </ProductLayout>
-                </SectionProduct >
+                </SectionProduct > */}
 
                 {/* <Section1 maxWidth='xl'> */}
                 < section id='about-section' >
