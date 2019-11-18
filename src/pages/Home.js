@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
+import bgBtm from '../assets/images/btm/btm.jpg'
 
-import { Typography, Container } from '@material-ui/core'
+import { Typography, Container, Grid } from '@material-ui/core'
 import arrow from '../assets/images/tooltip/arrow_down.svg'
 
 import TrendingUpIcon from '@material-ui/icons/TrendingUpRounded';
@@ -12,42 +13,25 @@ import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRo
 import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 
-import '../App.css'
+import '../style.css'
+import btm from '../assets/images/btm/Free-shipping-for-BATMTwo-Bitcoin-ATM.jpg';
+import watch from '../assets/images/watch/watch.png';
+import card from '../assets/images/card/Blue-Credit-Card.png';
+import cryptomap from '../assets/images/cryptomap/cryptomap.jpg';
+import blockchain from '../assets/images/blockchain/javascript-screenshot-2004161.jpg'
 
-const Section = styled(Container)`
-&& {
-    background-color: white;
-}
-`
-const Section1 = styled(Container)`
-    && {
-        background-color: rgba(248,248,248,1);
-        min-height: 100px;
-    }
-`
-const TrendingUp = styled(TrendingUpIcon)`
-    font-size: 10rem;
-`
+import bg from '../assets/images/container.png';
+import { Link } from 'react-router-dom'
+
+
+// const Section1 = styled(Container)`
+//     && {
+//         background-color: rgba(248,248,248,1);
+//         min-height: 100px;
+//     }
+// `
 
 export class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.handleMouseHover = this.handleMouseHover.bind(this);
-        this.state = {
-            isHovering: false,
-        }
-    }
-
-    handleMouseHover() {
-        this.setState(this.toggleHoverState);
-    }
-
-    toggleHoverState(state) {
-        return {
-            isHovering: !state.isHovering,
-        };
-    }
-
     render() {
         return (
             <div id='top'>
@@ -64,7 +48,7 @@ export class Home extends Component {
                         <Message>
                             —<br />MoveX,<br />HashBx Global.<br />
                         </Message>
-                        <a href="#about-section" className="action">
+                        <a href="#click" className="action">
                             <span className="action_icon">
                                 <img src={arrow} style={{ width: '23px', height: '23px' }} alt="action" />
                             </span>
@@ -72,30 +56,103 @@ export class Home extends Component {
                         </a>
                     </Session2>
                 </Info1>
+                <Section2>
+                    <img src={bgBtm} alt='' />
+                </Section2>
 
 
+                {/*!--------- Section Product ----------!*/}
 
-                <Section maxWidth='xl' id='click'>
-                    <Typography component="div" style={{ minHeight: '100px', padding: '5vh', textAlign: 'center', fontFamily: 'Sukhumvit' }}>
-                        Content No.1
-                    </Typography>
-                </Section>
+                <SectionProduct maxWidth='none' id='click'>
+                    <Typography style={{ padding: '8vh', fontFamily: 'Sukhumvit', textAlign: 'center', fontSize: '4vmin' }}>Our Products</Typography>
+                    <ProductLayout component="div">
+
+                        <Link to='/atmbitcoin' style={{ textDecoration: 'none', color: 'rgb(17, 17, 17)' }}>
+                            <Grid container style={{ backgroundColor: '#E2E2E2' }}>
+                                <GridLayout item xs={12} sm={6}>
+                                    <img src={btm} alt='' style={{ width: '400px', height: '400px' }} />
+                                </GridLayout>
+                                <GridLayout item xs={12} sm={6}>
+                                    <p style={{ padding: '8vw' }}><h2>Kiosk BTM</h2>A Bitcoin ATM (Automated Teller Machine) is a kiosk that allows a person to purchase Bitcoin through QR Code on the application.Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
+                                </p>
+                                </GridLayout>
+                            </Grid>
+                        </Link>
+
+                    </ProductLayout>
+                    <br />
+                    <ProductLayout component="div">
+                        <Link to='/watch' style={{ color: '#fff' }}>
+                            <Grid container style={{ backgroundColor: '#E0382D' }}>
+                                <GridLayout item xs={12} sm={6}>
+                                    <p style={{ padding: '8vw' }}><h2>Smart Watch</h2>The innovative for life Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX.
+                                    Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
+                                </p>
+                                </GridLayout>
+                                <GridLayout item xs={12} sm={6}>
+                                    <img src={watch} alt='' style={{ width: '400px', height: '400px' }} />
+                                </GridLayout>
+                            </Grid>
+                        </Link>
+                    </ProductLayout>
+                    <br />
+                    <ProductLayout>
+                        <Grid container style={{ backgroundColor: 'orange' }}>
+                            <GridLayout item xs={12} sm={6}>
+                                <img src={card} alt='' style={{ width: '400px', height: '400px' }} />
+                            </GridLayout>
+                            <GridLayout item xs={12} sm={6}>
+                                <p style={{ padding: '8vw' }}><h2>Card</h2>
+                                    Coming Soon
+                                </p>
+                            </GridLayout>
+                        </Grid>
+                    </ProductLayout>
+                    <br />
+                    <ProductLayout>
+
+                        <Grid container style={{ backgroundColor: 'yellow' }}>
+                            <GridLayout item xs={12} sm={6}>
+                                <p style={{ padding: '8vw' }}><h2>Cryptomap</h2>
+                                    Search for shops, cafes, accommodations, tourist attractions accept payments with Crypto currencies.
+                                </p>
+                            </GridLayout>
+                            <GridLayout item xs={12} sm={6}>
+                                <img src={cryptomap} alt='' style={{ width: '400px', height: '400px' }} />
+                            </GridLayout>
+                        </Grid>
+                    </ProductLayout>
+                    <br />
+                    <ProductLayout>
+                        <Grid container style={{ background: 'blue' }}>
+                            <GridLayout item xs={12} sm={6}>
+                                <img src={blockchain} alt='' style={{ width: '400px', height: '400px' }} />
+                            </GridLayout>
+                            <GridLayout item xs={12} sm={6}>
+
+                                <Typography>
+                                    Blockchain
+                                </Typography>
+                            </GridLayout>
+                        </Grid>
+                    </ProductLayout>
+                </SectionProduct >
 
                 {/* <Section1 maxWidth='xl'> */}
-                <div id='about-section'>
+                < section id='about-section' >
                     <div className='about-box'>
                         <div className='inner-about-box'>
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
-                                    <a href>
-                                        <TrendingUp />
+                                    <a href='#'>
+                                        <TrendingUpIcon />
                                     </a>
-                                    <h2>FAST ROI</h2>
+                                    <h2>FAST</h2>
                                     <p>Attractive product pricing for a faster return on investment allowing your company to scale faster.</p>
                                 </div>
                                 <div className='hover-about'>
-                                    <h1>FAST ROI</h1>
+                                    <h1>FAST</h1>
                                     <span></span>
                                     <p>Fast respond to customer question and complaint. We will make sure that our customer get a good service within time and solves problems for customer ASAP.</p>
                                 </div>
@@ -103,7 +160,7 @@ export class Home extends Component {
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
-                                    <a href>
+                                    <a href='#'>
                                         <SettingsRoundedIcon />
                                     </a>
                                     <h2>24/7 Services</h2>
@@ -125,7 +182,7 @@ export class Home extends Component {
                             </div>
                             <div className='about-post'>
                                 <div className='about-post-content'>
-                                    <a href>
+                                    <a href='#'>
                                         <SupervisorAccountRoundedIcon />
                                     </a>
                                     <h2>Support</h2>
@@ -148,7 +205,7 @@ export class Home extends Component {
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
-                                    <a href>
+                                    <a href='#'>
                                         <ForumRoundedIcon />
                                     </a>
                                     <h2>OEM Service provider</h2>
@@ -164,19 +221,19 @@ export class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </ section >
                 {/* </Section1> */}
 
-                <Container id='Container'>
-                    <Typography component="div" style={{ backgroundColor: 'black', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit' }}>
+                < Container id='Container' >
+                    <Typography component="div" style={{ backgroundColor: '#ffffff', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit' }}>
                         Content No. 3
                     </Typography>
-                </Container>
+                </Container >
                 <br />
 
 
                 <Footer />
-            </div>
+            </div >
         )
     }
 }
@@ -226,7 +283,46 @@ const Session2 = styled.div`
             `
 const Message = styled.div`
               font-size: 8vmin;
-              line-height: .85;
+              line-height: 0.85;
               margin-bottom: 1rem;
               color: white;
+              letter-spacing: 0.1em;
             `
+
+/*!--------- Section Product ----------!*/
+const SectionProduct = styled(Container)`
+&& {
+    background-color: white;
+}
+`
+const ProductLayout = styled(Typography)`
+&& {
+    /* min-height: 100px;
+    padding: 5vh; */
+    text-align: center;
+    font-family: 'Sukhumvit';
+}
+`
+const GridLayout = styled(Grid)`
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    letter-spacing: 0.1em;
+
+`
+const BgImg = styled.img.attrs({
+    src: bg
+})`
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+`
+
+const Section2 = styled.div`
+    
+    overflow: hidden;
+    position: relative;
+    filter: brightness(90%);
+`

@@ -1,0 +1,250 @@
+
+/*!--------- navbar ---------!*/
+.nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  transition: all 0.2s ease-out;
+  background: rgba(0,0,0,0.8);
+}
+
+.scrolled {
+    top: -80px;
+}
+
+/*!--------- home ---------!*/
+
+
+/*!--------------- about section --------------!*/
+
+#about-section {
+    padding-top: 40px;
+    background: #f8f8f8;
+    box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+#about-section .title-section {
+    margin-bottom: 80px;
+}
+
+#about-section .about-box {
+    background: url(./assets/images/gb2.jpg) center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    padding-top: 1px;
+}
+
+#about-section .about-box .inner-about-box {
+    overflow: hidden;
+    margin-top: -51px;
+}
+
+#about-section .about-box .about-post {
+    text-align: center;
+    float: left;
+    width: 25%;
+    position: relative;
+    padding-bottom: 340px;
+    background: transparent;
+    margin-top: 50px;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#about-section .about-box .about-post .about-post-content {
+    background: #ffffff;
+    padding: 0 30px 60px;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    min-height: 230px;
+}
+
+@media(max-width:1100px) {
+    #about-section .about-box .about-post .about-post-content {
+        min-height: 300px;
+    }
+}
+
+#about-section .about-box .about-post .about-post-content a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 24px;
+    line-height: 114px;
+    color: #dadfe1;
+    font-size: 40px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 50%;
+}
+
+#about-section .about-box .about-post .about-post-content a svg {
+    font-size: inherit;
+}
+
+#about-section .about-box .about-post .about-post-content a:hover {
+    background: #1f57a1;
+    color: #ffffff;
+}
+
+#about-section .about-box .about-post .about-post-content h2 {
+    color: #222222;
+    font-size: 15px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#about-section .about-box .about-post .about-post-content p {
+    margin: 0 auto;
+    font-size: 13px;
+    max-width: 210px;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#about-section .about-box .about-post .hover-about {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    padding: 0 30px;
+    padding-top: 80px;
+    background: transparent;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#about-section .about-box .about-post .hover-about h2 {
+    color: #222222;
+    font-size: 15px;
+    margin: 0 0 15px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 6px;
+}
+
+#about-section .about-box .about-post .hover-about h1 {
+    color: #222222;
+    font-size: 25px;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+#about-section .about-box .about-post .hover-about span {
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    width: 62px;
+    height: 5px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin: 0 0 40px;
+    opacity: 0;
+}
+
+#about-section .about-box .about-post .hover-about p {
+    color: #ffffff;
+    max-width: 340px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#about-section .about-box .about-post:hover .about-post-content {
+    background: transparent;
+}
+
+#about-section .about-box .about-post:hover .about-post-content h2,
+#about-section .about-box .about-post:hover .about-post-content p {
+    opacity: 0;
+}
+
+#about-section .about-box .about-post:hover .about-post-content a {
+    background: rgb(238,67,45);
+    border: 1px solid rgb(238,67,45);
+    color: #ffffff;
+}
+
+#about-section .about-box .about-post:hover .hover-about {
+    top: 0;
+    padding-top: 100px;
+}
+
+#about-section .about-box .about-post:hover .hover-about span,
+#about-section .about-box .about-post:hover .hover-about p {
+    opacity: 1;
+}
+
+#about-section .about-box .about-post:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#about-section .about-box .about-post:hover:before {
+    opacity: 0.85;
+}
+
+#about-section .about-box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.6);
+}
