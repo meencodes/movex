@@ -2,13 +2,10 @@
     src: url(./assets/fonts/SukhumvitSet-Medium.ttf);
     font-family: 'Sukhumvit';
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   margin: 0;
 }
-
 
 #app {
     font-family: 'Sukhumvit';
@@ -18,15 +15,18 @@ a {
     text-decoration: none;
     letter-spacing: 0.1em;
     color: rgb(236, 236, 236);
+    text-transform:uppercase;
 }
 a:hover {
   color: rgb(238,67,45);
   text-decoration: none;
 }
+
   
   .action {
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
   }
   
   .action_icon {
@@ -35,7 +35,7 @@ a:hover {
     z-index: 0;
     position: relative;
     line-height: 0;
-
+    
     align-items: center;
   }
   .action_icon::before {

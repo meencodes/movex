@@ -27,12 +27,12 @@ class Footer extends Component {
                         <div className="col-xs-6 col-md-3">
                             <h6>Quick Links</h6>
                             <ul className="footer-links">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Kiosk BTM</a></li>
-                                <li><a href="">Watch</a></li>
-                                <li><a href="">Card</a></li>
-                                <li><a href="">Cryptomap</a></li>
-                                <li><a href="">Blockchain</a></li>
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#ss">Kiosk BTM</a></li>
+                                <li><a href="#ss">Watch</a></li>
+                                <li><a href="#ss">Card</a></li>
+                                <li><a href="#ss">Cryptomap</a></li>
+                                <li><a href="#ss">Blockchain</a></li>
                             </ul>
                         </div>
                     </div>
@@ -41,15 +41,15 @@ class Footer extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 col-sm-6 col-xs-12">
-                            <p className="copyright-text">Copyright &copy; 2019 All Rights Reserved by &nbsp;<a href="#">Hashbx Global Co., LTD</a>.
+                            <p className="copyright-text">Copyright &copy; 2019 All Rights Reserved by &nbsp;<a href="#ss">Hashbx Global Co., LTD</a>.
                             </p>
                         </div>
 
                         <div className="col-md-4 col-sm-6 col-xs-12">
                             <ul className="social-icons">
-                                <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li>
-                                <li><a className="youtube" href="#"><i className="fa fa-youtube"></i></a></li>
+                                <li><a className="facebook" href="#ss"><i className="fa fa-facebook"></i></a></li>
+                                <li><a className="twitter" href="#ss"><i className="fa fa-twitter"></i></a></li>
+                                <li><a className="youtube" href="#ss"><i className="fa fa-youtube"></i></a></li>
                                 {/* <li><a className="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li> */}
                             </ul>
                         </div>

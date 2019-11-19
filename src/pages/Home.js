@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
 import bgBtm from '../assets/images/btm/btm.jpg'
 
-import { Typography, Container, Grid } from '@material-ui/core'
+import { Typography, Container } from '@material-ui/core'
 import arrow from '../assets/images/tooltip/arrow_down.svg'
 
 import TrendingUpIcon from '@material-ui/icons/TrendingUpRounded';
@@ -13,28 +13,22 @@ import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRo
 import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 
+import '../App.css'
 import '../style.css'
-import btm from '../assets/images/btm/Free-shipping-for-BATMTwo-Bitcoin-ATM.jpg';
-import watch from '../assets/images/watch/watch.png';
-import card from '../assets/images/card/Blue-Credit-Card.png';
-import cryptomap from '../assets/images/cryptomap/cryptomap.jpg';
-import blockchain from '../assets/images/blockchain/javascript-screenshot-2004161.jpg'
+// import btm from '../assets/images/btm/Free-shipping-for-BATMTwo-Bitcoin-ATM.jpg';
+// import watch from '../assets/images/watch/watch.png';
+// import card from '../assets/images/card/Blue-Credit-Card.png';
+// import cryptomap from '../assets/images/cryptomap/cryptomap.jpg';
+// import blockchain from '../assets/images/blockchain/javascript-screenshot-2004161.jpg'
 
-import bg from '../assets/images/container.png';
-import { Link } from 'react-router-dom'
+// import bg from '../assets/images/container.png';
+import { Link } from 'react-scroll';
 
-
-// const Section1 = styled(Container)`
-//     && {
-//         background-color: rgba(248,248,248,1);
-//         min-height: 100px;
-//     }
-// `
 
 export class Home extends Component {
     render() {
         return (
-            <div id='top'>
+            <div id='main'>
                 <Header />
 
                 <Info1>
@@ -48,15 +42,22 @@ export class Home extends Component {
                         <Message>
                             —<br />MoveX,<br />HashBx Global.<br />
                         </Message>
-                        <a href="#about-section" className="action">
+                        <Link
+                            className="action"
+                            to='about-section'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
                             <span className="action_icon">
                                 <img src={arrow} style={{ width: '23px', height: '23px' }} alt="action" />
                             </span>
-                            <span className="action_message">Contents</span>
-                        </a>
+                            <span className="action_message">Product</span>
+                        </Link>
                     </Session2>
                 </Info1>
-                <Section2>
+                <Section2 id="">
                     <img src={bgBtm} alt='' />
                 </Section2>
 
@@ -145,7 +146,7 @@ export class Home extends Component {
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
-                                    <a href='#'>
+                                    <a href='#ss'>
                                         <TrendingUpIcon />
                                     </a>
                                     <h2>FAST</h2>
@@ -160,7 +161,7 @@ export class Home extends Component {
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
-                                    <a href='#'>
+                                    <a href='#ss'>
                                         <SettingsRoundedIcon />
                                     </a>
                                     <h2>24/7 Services</h2>
@@ -182,7 +183,7 @@ export class Home extends Component {
                             </div>
                             <div className='about-post'>
                                 <div className='about-post-content'>
-                                    <a href='#'>
+                                    <a href='#ss'>
                                         <SupervisorAccountRoundedIcon />
                                     </a>
                                     <h2>Support</h2>
@@ -205,7 +206,7 @@ export class Home extends Component {
 
                             <div className='about-post'>
                                 <div className='about-post-content'>
-                                    <a href='#'>
+                                    <a href='#ss'>
                                         <ForumRoundedIcon />
                                     </a>
                                     <h2>OEM Service provider</h2>
@@ -290,35 +291,6 @@ const Message = styled.div`
             `
 
 /*!--------- Section Product ----------!*/
-const SectionProduct = styled(Container)`
-&& {
-    background-color: white;
-}
-`
-const ProductLayout = styled(Typography)`
-&& {
-    /* min-height: 100px;
-    padding: 5vh; */
-    text-align: center;
-    font-family: 'Sukhumvit';
-}
-`
-const GridLayout = styled(Grid)`
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    letter-spacing: 0.1em;
-
-`
-const BgImg = styled.img.attrs({
-    src: bg
-})`
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    position: relative;
-`
 
 const Section2 = styled.div`
     

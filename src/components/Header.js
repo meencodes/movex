@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/images/logo/LogoMoveX-BBG-01.svg'
 import '../style.css'
+import { Link as Scroll } from 'react-scroll'
 
 class Header extends Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class Header extends Component {
 
     if (isTop !== true) {
       this.setState({
-        pos: temp, 
+        pos: temp,
         visible
       });
     }
@@ -43,8 +44,9 @@ class Header extends Component {
       <div className={this.state.visible ? 'nav' : 'nav scrolled'}>
         <Navbar>
           <NavbarLogo>
-            <a href="#top" className="action"><LogoImg src={Logo} alt='logo' /></a>
-            {/* <Link to='/'><LogoImg src={Logo} alt='logo'/></Link> */}
+            <Scroll to='main' spy={true} smooth={true} offset={0} duration={500} className="action">
+              <LinkLogo to='/'><LogoImg src={Logo} alt='logo' /></LinkLogo>
+            </Scroll>
           </NavbarLogo>
 
           <NavbarButton>
@@ -63,15 +65,15 @@ class Header extends Component {
 
 export default Header;
 
-const Nav = styled.div`
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  position: fixed;
-  transition: all 0.2s ease-out;
-  background: rgba(0,0,0,0.8);
-`
+// const Nav = styled.div`
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 999;
+//   position: fixed;
+//   transition: all 0.2s ease-out;
+//   background: rgba(0,0,0,0.8);
+// `
 const Navbar = styled.div`
   padding: 2vh 6vw;
   display: flex;
@@ -114,4 +116,8 @@ const Linked = styled(Link)`
   &:hover {
     color: rgb(238,67,45);
   }
+`
+const LinkLogo = styled(Link)`
+  display: inline-flex;
+  align-items: center;
 `

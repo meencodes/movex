@@ -282,7 +282,7 @@
 }
 .site-footer a:hover
 {
-  color:#3366cc;
+  color:rgb(238,67,45);
   text-decoration:none;
 }
 .footer-links
@@ -300,7 +300,7 @@
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#3366cc;
+  color:rgb(238,67,45);
   text-decoration:none;
 }
 .footer-links.inline li
@@ -401,9 +401,9 @@
 {
   background-color:#007bb6
 }
-.social-icons a.dribbble:hover
+.social-icons a.youtube:hover
 {
-  background-color:#ea4c89
+  background-color:#ea4c4c
 }
 @media (max-width:767px)
 {
