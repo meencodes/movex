@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Header from '../components/Header'
+// import Test from '../components/test'
 import Footer from '../components/Footer'
 import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
 import bgBtm from '../assets/images/btm/btm.jpg'
@@ -13,13 +14,7 @@ import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRo
 import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 
-import '../App.css'
-import '../style.css'
-// import btm from '../assets/images/btm/Free-shipping-for-BATMTwo-Bitcoin-ATM.jpg';
-// import watch from '../assets/images/watch/watch.png';
-// import card from '../assets/images/card/Blue-Credit-Card.png';
-// import cryptomap from '../assets/images/cryptomap/cryptomap.jpg';
-// import blockchain from '../assets/images/blockchain/javascript-screenshot-2004161.jpg'
+import '../style.css';
 
 // import bg from '../assets/images/container.png';
 import { Link } from 'react-scroll';
@@ -29,8 +24,8 @@ export class Home extends Component {
     render() {
         return (
             <div id='main'>
+                {/* <Test /> */}
                 <Header />
-
                 <Info1>
                     <Session1>
                         <InfoImg1>

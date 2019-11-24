@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import Logo from '../assets/images/logo/LogoMoveX-BBG-01.svg'
-import '../style.css'
+import '../App.css'
 import { Link as Scroll } from 'react-scroll'
 
 class Header extends Component {
@@ -17,6 +15,12 @@ class Header extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+
+    const selectElement = (element) => document.querySelector(element);
+
+    selectElement('.mobile-menu').addEventListener('click', () => {
+      selectElement('.navbar').classList.toggle('active');
+    })
   }
 
   componentWillUnmount() {
@@ -41,23 +45,48 @@ class Header extends Component {
 
   render() {
     return (
-      <div className={this.state.visible ? 'nav' : 'nav scrolled'}>
-        <Navbar>
-          <NavbarLogo>
-            <Scroll to='main' spy={true} smooth={true} offset={0} duration={500} className="action">
-              <LinkLogo to='/'><LogoImg src={Logo} alt='logo' /></LinkLogo>
-            </Scroll>
-          </NavbarLogo>
+      <div className={this.state.visible ? 'navbar' : 'navbar scrolled'}>
+        <div className="container">
+          <nav className="nav">
+            <ul className="nav-list nav-list-mobile">
+              <li className="nav-item">
+                <Scroll to='main' spy={true} smooth={true} offset={0} duration={500} className="action">
+                  <Link to="/" className="nav-link-movex" />
+                </Scroll>
+              </li>
+              <li className="nav-item">
+                <div className="mobile-menu">
+                  <span className="line line-top"></span>
+                  <span className="line line-middle"></span>
+                  <span className="line line-bottom"></span>
+                </div>
+              </li>
 
-          <NavbarButton>
-            {/* <Link to='/'>HOME</Link> */}
-            <Linked to='/atmbitcoin'>Kiosk BTM</Linked>
-            <Linked to='/watch'>Watch</Linked>
-            <Linked to='/card'>Card</Linked>
-            <Linked to='/cryptomap'>Cryptomap</Linked>
-            <Linked to='/blockchain'>Blockchain</Linked>
-          </NavbarButton>
-        </Navbar>
+            </ul>
+
+            <ul className="nav-list nav-list-larger">
+              <li className="nav-item nav-item-hidden">
+                <Link to="/" className="nav-link nav-link-movex" />
+              </li>
+              <li className="nav-item">
+                <Link to="/atmbitcoin" className="nav-link">Kiosk BTM</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/watch" className="nav-link">Watch</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/card" className="nav-link">Card</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/cryptomap" className="nav-link">Cryptomap</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/blockchain" className="nav-link">Blockchain</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
     )
   }
@@ -74,50 +103,43 @@ export default Header;
 //   transition: all 0.2s ease-out;
 //   background: rgba(0,0,0,0.8);
 // `
-const Navbar = styled.div`
-  padding: 2vh 6vw;
-  display: flex;
-  align-self: center;
-  background: rgba(26,26,26,0);
-  transition: all 0.2s ease-out;
-  justify-content: space-between;
-  font-size: 16px;
+// const Navbar = styled.div`
+//   padding: 2vh 6vw;
+//   display: flex;
+//   align-self: center;
+//   background: rgba(26,26,26,0);
+//   transition: all 0.2s ease-out;
+//   justify-content: space-between;
+//   font-size: 16px;
 
-  @media (max-width: 576px) {
-      /* padding: 2vh 2vw;
-      right: 0;
-      top: 0;
-      display: block;
-      float: left; */
-  }
-`
-const NavbarLogo = styled.div`
-  display: flex;
-  align-self: center;
-`
-const NavbarButton = styled.div`
-  display: flex;
-  align-self: center;
-  align-items: center;
-`
-const LogoImg = styled.img`
-  width: 150px;
+// `
+// const NavbarLogo = styled.div`
+//   display: flex;
+//   align-self: center;
+// `
+// const NavbarButton = styled.div`
+//   display: flex;
+//   align-self: center;
+//   align-items: center;
+// `
+// const LogoImg = styled.img`
+//   width: 150px;
 
-  &:hover {
-    color: rgb(216, 69, 69);
-  }
-`
-const Linked = styled(Link)`
-  color: rgb(236, 236, 236);
-  margin-right: 50px;
-  text-decoration: none;
-  letter-spacing: 0.1em;
+//   &:hover {
+//     color: rgb(216, 69, 69);
+//   }
+// `
+// const Linked = styled(Link)`
+//   color: rgb(236, 236, 236);
+//   margin-right: 50px;
+//   text-decoration: none;
+//   letter-spacing: 0.1em;
 
-  &:hover {
-    color: rgb(238,67,45);
-  }
-`
-const LinkLogo = styled(Link)`
-  display: inline-flex;
-  align-items: center;
-`
+//   &:hover {
+//     color: rgb(238,67,45);
+//   }
+// `
+// const LinkLogo = styled(Link)`
+//   display: inline-flex;
+//   align-items: center;
+// `

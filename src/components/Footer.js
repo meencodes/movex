@@ -1,59 +1,59 @@
 import React, { Component } from 'react';
 import '../style.css'
+import '../App.css'
+import logo from '../assets/images/logo/LogoMoveX-BBG-01.svg'
 
 class Footer extends Component {
     render() {
         return (
-            <div className="site-footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-12 col-md-6">
-                            <h6>About</h6>
-                            <p className="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <div className="footer">
+                <div className="footer-distributed">
+
+                    <div class="footer-left">
+                        <img src={logo} />
+                        {/* <h3>About<span>Eduonix</span></h3> */}
+
+                        <p class="footer-links">
+                            {/* <a href="#">Home</a> */}
+                            <a href="#">Kiosk Btm</a>
+                            <a href="#">Watch</a>
+                            <a href="#">Card</a>
+                            <a href="#">Cryptomap</a>
+                            <a href="#">Blockchain</a>
+                        </p>
+
+                        <p class="footer-company-name">Copyright © 2019 All Rights Reserved by  Hashbx Global Co., LTD.</p>
+                    </div>
+
+                    <div class="footer-center">
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p><span>309 - Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+                                Mahape, Navi Mumbai - 400710</p>
                         </div>
 
-                        {/* <div className="col-xs-6 col-md-3">
-                            <h6>Categories</h6>
-                            <ul className="footer-links">
-                                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-                            </ul>
-                        </div> */}
-
-                        <div className="col-xs-6 col-md-3">
-                            <h6>Quick Links</h6>
-                            <ul className="footer-links">
-                                <li><a href="#Home">Home</a></li>
-                                <li><a href="#ss">Kiosk BTM</a></li>
-                                <li><a href="#ss">Watch</a></li>
-                                <li><a href="#ss">Card</a></li>
-                                <li><a href="#ss">Cryptomap</a></li>
-                                <li><a href="#ss">Blockchain</a></li>
-                            </ul>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>02-107-9115</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:support@hashbx.com">support@hashbx.com</a></p>
                         </div>
                     </div>
-                    <hr />
-                </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-8 col-sm-6 col-xs-12">
-                            <p className="copyright-text">Copyright &copy; 2019 All Rights Reserved by &nbsp;<a href="#ss">Hashbx Global Co., LTD</a>.
-                            </p>
-                        </div>
-
-                        <div className="col-md-4 col-sm-6 col-xs-12">
-                            <ul className="social-icons">
-                                <li><a className="facebook" href="#ss"><i className="fa fa-facebook"></i></a></li>
-                                <li><a className="twitter" href="#ss"><i className="fa fa-twitter"></i></a></li>
-                                <li><a className="youtube" href="#ss"><i className="fa fa-youtube"></i></a></li>
-                                {/* <li><a className="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li> */}
-                            </ul>
+                    <div class="footer-right">
+                        <p class="footer-company-about">
+                            <span>About the company</span>
+                            We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+                        <div class="footer-icons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
+
                 </div>
             </div>
 
