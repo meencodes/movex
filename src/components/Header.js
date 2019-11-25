@@ -63,30 +63,34 @@ class Header extends Component {
               </li>
 
             </ul>
-
-            <ul className="nav-list nav-list-larger">
-              <li className="nav-item nav-item-hidden">
-                <Link to="/" className="nav-link nav-link-movex" />
-              </li>
-              <li className="nav-item">
-                <Link to="/atmbitcoin" className="nav-link">Kiosk BTM</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/watch" className="nav-link">Watch</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/card" className="nav-link">Card</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/cryptomap" className="nav-link">Cryptomap</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/blockchain" className="nav-link">Blockchain</Link>
-              </li>
-            </ul>
+            {/* <div className="navbar-header"> */}
+              <ul className="nav-list nav-list-larger">
+                <li className="nav-item nav-item-hidden">
+                  <Scroll to='main' spy={true} smooth={true} offset={0} duration={500} className="action">
+                    <Link to="/" className="nav-link nav-link-movex" />
+                  </Scroll>
+                </li>
+                {/* <div className="navbar-button"> */}
+                <li className="nav-item">
+                  <Link to="/atmbitcoin" className="nav-link">Kiosk BTM</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/watch" className="nav-link">Watch</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/card" className="nav-link">Card</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/cryptomap" className="nav-link">Cryptomap</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/blockchain" className="nav-link">Blockchain</Link>
+                </li>
+                {/* </div> */}
+              </ul>
+            {/* </div> */}
           </nav>
         </div>
-
       </div>
     )
   }
@@ -104,23 +108,23 @@ export default Header;
 //   background: rgba(0,0,0,0.8);
 // `
 // const Navbar = styled.div`
-//   padding: 2vh 6vw;
-//   display: flex;
-//   align-self: center;
-//   background: rgba(26,26,26,0);
-//   transition: all 0.2s ease-out;
-//   justify-content: space-between;
-//   font-size: 16px;
+  // padding: 2vh 6vw;
+  // display: flex;
+  // align-self: center;
+  // background: rgba(26,26,26,0);
+  // transition: all 0.2s ease-out;
+  // justify-content: space-between;
+  // font-size: 16px;
 
 // `
 // const NavbarLogo = styled.div`
-//   display: flex;
-//   align-self: center;
+  // display: flex;
+  // align-self: center;
 // `
 // const NavbarButton = styled.div`
-//   display: flex;
-//   align-self: center;
-//   align-items: center;
+  // display: flex;
+  // align-self: center;
+  // align-items: center;
 // `
 // const LogoImg = styled.img`
 //   width: 150px;

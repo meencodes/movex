@@ -15,18 +15,131 @@ import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 
 import '../style.css';
+import '../bootstrap-touch-slider.css';
 
 // import bg from '../assets/images/container.png';
 import { Link } from 'react-scroll';
 
+class Home extends Component {
+    constructor(props) {
+        super(props);
+    }
 
-export class Home extends Component {
+    componentDidMount() {
+
+    }
+    
     render() {
         return (
             <div id='main'>
                 {/* <Test /> */}
                 <Header />
-                <Info1>
+
+                <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                    </ol>
+
+
+                    <div class="carousel-inner" role="listbox">
+
+
+                        <div class="item active slide_1">
+
+
+                            <div class="bs-slider-overlay"></div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="slide-text slide_style_left kanit">
+                                        <h1 data-animation="animated fadeInRight">เปิดบริการแล้ววันนี้</h1>
+                                        <h2 data-animation="animated fadeInLeft">ที่ สยามพารากอน ชั้น GA (NORTH)</h2>
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item slide_2">
+
+
+                            <div class="bs-slider-overlay"></div>
+
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="slide-text slide_style_left">
+                                        <h1 data-animation="animated fadeInRight">E<img src="/images/logo-2-white.png" class="logo-2-small" />ANYWHERE
+                            <br />ELECTRIC FOR ANY CARS</h1>
+                                        <br />
+                                        <a href="https://itunes.apple.com/th/app/ea-anywhere/id1240656004" target="_blank" class="btn btn-store" data-animation="animated fadeInLeft">
+                                            <img src="/images/app_store_btn.png" alt="" />
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=evcl.energyabsolute.co.th.evcl" target="_blank" class="btn btn-store" data-animation="animated fadeInRight">
+                                            <img src="/images/play_store_btn.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item slide_3">
+
+
+                            <div class="bs-slider-overlay"></div>
+
+                            <div class="slide-text slide_style_right">
+                                <h1 data-animation="animated flipInX">E<img src="/images/logo-2-white.png" class="logo-2-small" />ANYWHERE
+                    <br />ELECTRIC FOR ANY CARS</h1>
+
+                                <br />
+                                <a href="https://itunes.apple.com/th/app/ea-anywhere/id1240656004" target="_blank" class="btn btn-store" data-animation="animated fadeInLeft">
+                                    <img src="/images/app_store_btn.png" alt="" />
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=evcl.energyabsolute.co.th.evcl" target="_blank" class="btn btn-store" data-animation="animated fadeInRight">
+                                    <img src="/images/play_store_btn.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="item active slide_4">
+
+
+                            <div class="bs-slider-overlay"></div>
+
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="slide-text slide_style_right kanit">
+                                        <h1 data-animation="animated fadeInRight">Open Now!</h1>
+                                        <h2 data-animation="animated fadeInLeft">At HashBx Global</h2>
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                {/* <Info1>
                     <Session1>
                         <InfoImg1>
                             <BgImage src={banner} alt="saron" sizes="180vh" />
@@ -51,9 +164,9 @@ export class Home extends Component {
                             <span className="action_message">Product</span>
                         </Link>
                     </Session2>
-                </Info1>
+                </Info1> */}
                 <Section2 id="">
-                    <img src={bgBtm} alt='' />
+                    <img src={bgBtm} alt='' style={{backgroundSize: 'cover', width: '100vw'}}/>
                 </Section2>
 
 
@@ -237,59 +350,59 @@ export class Home extends Component {
 export default Home
 
 const Info1 = styled.div`
-              height: 100vh;
-              overflow: hidden;
-              position: relative;
-            `
+                          height: 100vh;
+                          overflow: hidden;
+                          position: relative;
+                        `
 const Session1 = styled.div`
-              top: 0;
-              left: 0;
-              width: 100vw;
-              bottom: 0;
-              overflow: hidden;
-              position: absolute;
-            `
+                          top: 0;
+                          left: 0;
+                          width: 100vw;
+                          bottom: 0;
+                          overflow: hidden;
+                          position: absolute;
+                        `
 const InfoImg1 = styled.div`
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              z-index: 0;
-              overflow: hidden;
-              position: absolute;
-            `
+                          top: 0;
+                          left: 0;
+                          right: 0;
+                          bottom: 0;
+                          z-index: 0;
+                          overflow: hidden;
+                          position: absolute;
+                        `
 const BgImage = styled.img`
-              top: 0;
-              right: 0;
-              width: 100vw;
-              height: 100%;
-              z-index: 0;
-              position: absolute;
-              object-fit: cover;
-              /* filter: blur(2px); */
-              filter: brightness(70%);
-            `
+                          top: 0;
+                          right: 0;
+                          width: 100vw;
+                          height: 100%;
+                          z-index: 0;
+                          position: absolute;
+                          object-fit: cover;
+                          /* filter: blur(2px); */
+                          filter: brightness(70%);
+                        `
 
 /* ----- Session Arrow ----------*/
 
 const Session2 = styled.div`
-              left: 5vw;
-              bottom: 5vh;
-              position: absolute;
-            `
+                          left: 5vw;
+                          bottom: 5vh;
+                          position: absolute;
+                        `
 const Message = styled.div`
-              font-size: 8vmin;
-              line-height: 0.85;
-              margin-bottom: 1rem;
-              color: white;
-              letter-spacing: 0.1em;
-            `
+                          font-size: 8vmin;
+                          line-height: 0.85;
+                          margin-bottom: 1rem;
+                          color: white;
+                          letter-spacing: 0.1em;
+                        `
 
 /*!--------- Section Product ----------!*/
 
 const Section2 = styled.div`
-    
-    overflow: hidden;
-    position: relative;
-    filter: brightness(90%);
+                
+                overflow: hidden;
+                position: relative;
+                filter: brightness(90%);
 `
