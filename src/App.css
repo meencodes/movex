@@ -16,10 +16,9 @@ a {
     text-decoration: none;
     letter-spacing: 0.1em;
     color: rgb(236, 236, 236);
-    /* text-transform:uppercase; */
 }
 a:hover {
-  color: rgb(238,67,45);
+  /* color: rgb(238,67,45); */
   text-decoration: none;
 }
 
@@ -75,19 +74,18 @@ a:hover {
   transition: all 0.2s ease-out;
   background: rgba(0,0,0,0.8);
   backdrop-filter: blur(2rem);
-  padding: 1.8vh 18vw;
+  padding: 1.8vh 22vw;
 }
 
 .scrolled {
     top: -80px;
 }
 
-
-.container {
+/* .container {
   max-width: 98rem;
   margin: 0 auto;
   padding: 0 2.2rem;
-}
+} */
 
 .header {
   position: fixed;
@@ -124,6 +122,153 @@ a:hover {
   width: 8rem;
   height: 2rem;
   background: url(./assets/images/logo/image_small.svg) center no-repeat;
+}
+
+/* section product */
+
+.btm-bitcoin {
+  background: url("./assets/images/btm/btm.jpg");
+}
+
+/* .container {
+  margin-left: 16.66666667%;
+  text-align: center;
+} */
+
+.title {
+  color: #fff;
+  text-align: center;
+  padding-top: 3rem;
+}
+.textbox-wrap {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.title-border {
+  margin: 0 auto;
+  background-position: center;
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  padding-bottom: 23.2rem;
+  height: 100%;
+}
+
+.title-heading {
+  font-size: 3.5rem;
+  line-height: 1.07143;
+  letter-spacing: -.005rem;
+}
+.title-sub-heading {
+  font-size: 1.3rem;
+  margin-top: .6rem;
+  letter-spacing: .008rem;
+  font-weight: 400;
+}
+.title-details {
+  font-size: 1rem;
+  color: #888;
+  margin-top: .68rem;
+}
+
+/* watch */
+
+.watch {
+  background: url("./assets/images/watch/watch_large.jpg");
+}
+
+.title-dark {
+  color: #000;
+
+}
+.title-heading-watch {
+  height: 3rem;
+  background: url("./assets/images/logo/image_small_dark.svg") center no-repeat;
+  background-size: auto 3rem;
+  margin-top: 1.6rem;
+}
+
+/* Move to bottom  */
+.hero {
+  height: 46rem;
+  /* background-size: auto 50rem; */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-top: .6rem solid #fff; */
+  border-bottom: .6rem solid #fff;
+
+}
+.btm-bitcoin {
+  border-top: none;
+}
+
+/* end */
+
+@media screen and (max-width: 1068px) {
+  .btm-bitcoin {
+    background: url("./assets/images/btm/btm.jpg");
+  }
+
+  .watch {
+    background: url("./assets/images/watch/watch_large_medium.jpg")
+  }
+
+  .hero {
+    height: 43.625rem;
+    background-size: auto 43.625rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title-heading {
+    font-size: 2.5rem;
+  }
+
+  .title-sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .title-heading-watch {
+    height: 3rem;
+    background: url("./assets/images/logo/image_small_dark.svg") center no-repeat;
+    background-size: auto 3rem;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .textbox-wrap {
+    width: 95%;
+  }
+
+  .btm-bitcoin {
+    background: url("./assets/images/btm/btm.jpg");
+  }
+
+  .watch {
+    background: url("./assets/images/watch/watch_large_small.jpg")
+  }
+
+  .title {
+    padding-top: 1.8rem;
+  }
+
+  .title-sub-heading {
+    font-size: 1rem;
+  }
+
+  .title-heading-watch {
+    height: 2.5rem;
+    background-size: auto 2.5rem;
+
+  }
+
+  .hero {
+    /* width: 46rem; */
+    height: 34.25rem;
+    background-size: auto 34.25rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -175,13 +320,13 @@ a:hover {
   }
 
   .line-top {
-    margin-top: -.3rem;
+    margin-top: -.5rem;
   }
   .line-middle {
-    margin-top: 3px;
+    margin-top: 0px;
   }
   .line-bottom {
-    margin-top: 11px;
+    margin-top: 8px;
   }
 
   .active .line-top {

@@ -63,14 +63,13 @@ class Header extends Component {
               </li>
 
             </ul>
-            {/* <div className="navbar-header"> */}
               <ul className="nav-list nav-list-larger">
                 <li className="nav-item nav-item-hidden">
                   <Scroll to='main' spy={true} smooth={true} offset={0} duration={500} className="action">
                     <Link to="/" className="nav-link nav-link-movex" />
                   </Scroll>
                 </li>
-                {/* <div className="navbar-button"> */}
+
                 <li className="nav-item">
                   <Link to="/atmbitcoin" className="nav-link">Kiosk BTM</Link>
                 </li>
@@ -86,9 +85,9 @@ class Header extends Component {
                 <li className="nav-item">
                   <Link to="/blockchain" className="nav-link">Blockchain</Link>
                 </li>
-                {/* </div> */}
+
               </ul>
-            {/* </div> */}
+
           </nav>
         </div>
       </div>

@@ -196,9 +196,8 @@
 }
 
 .slide-text {
-	left: 0;
-	top: 29%;
-	right: 0;
+	left: 5vw;
+	bottom: 5vh;
 	margin: auto;
 	padding: 10px;
 	position: absolute;
@@ -367,7 +366,6 @@
 
 .slide_2 {
 	background: url(./assets/images/architectural-design-architecture-buildings-city-374811.jpg);
-	height: 100vh;
 	background-size: cover;
 	background-position: 56%;
 	background-attachment: fixed;
