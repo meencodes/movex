@@ -6,7 +6,9 @@ import Footer from '../components/Footer'
 // import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
 // import arrow from '../assets/images/tooltip/arrow_down.svg'
 // import bgBtm from '../assets/images/btm/btm.jpg'
-import Smart from '../assets/images/watch/5db8944f21f4f786db9b2c3.png'
+import Small from '../assets/images/watch/watch_small.png';
+import Medium from '../assets/images/watch/watch_medium.png';
+import Large from '../assets/images/watch/watch_large.png';
 
 import { Typography, Container } from '@material-ui/core'
 
@@ -34,44 +36,44 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        function bsTouchSlider ( options ) {
-            var carousel = $( ".carousel" );
-            return this.each( function ( ) {
-    
-                function doAnimations( elems ) {
+        function bsTouchSlider(options) {
+            var carousel = $(".carousel");
+            return this.each(function () {
+
+                function doAnimations(elems) {
                     //Cache the animationend event in a variable
                     var animEndEv = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                    elems.each( function ( ) {
-                        var $this = $( this ), $animationType = $this.data( 'animation' );
-                        $this.addClass( $animationType ).one( animEndEv, function ( ) {
-                            $this.removeClass( $animationType );
-                        } );
-                    } );
+                    elems.each(function () {
+                        var $this = $(this), $animationType = $this.data('animation');
+                        $this.addClass($animationType).one(animEndEv, function () {
+                            $this.removeClass($animationType);
+                        });
+                    });
                 }
-    
+
                 //Variables on page load
-                var $firstAnimatingElems = carousel.find( '.item:first' ).find( "[data-animation ^= 'animated']" );
+                var $firstAnimatingElems = carousel.find('.item:first').find("[data-animation ^= 'animated']");
                 //Initialize carousel
-                carousel.carousel( );
+                carousel.carousel();
                 //Animate captions in first slide on page load
-                doAnimations( $firstAnimatingElems );
+                doAnimations($firstAnimatingElems);
                 //Other slides to be animated on carousel slide event
-                carousel.on( 'slide.bs.carousel', function ( e ) {
-                    var $animatingElems = $( e.relatedTarget ).find( "[data-animation ^= 'animated']" );
-                    doAnimations( $animatingElems );
-                } );
+                carousel.on('slide.bs.carousel', function (e) {
+                    var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+                    doAnimations($animatingElems);
+                });
                 //swipe initial 
-                $( ".carousel .carousel-inner" ).swipe( {
-                    swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
-                        this.parent( ).carousel( 'next' );
+                $(".carousel .carousel-inner").swipe({
+                    swipeLeft: function (event, direction, distance, duration, fingerCount) {
+                        this.parent().carousel('next');
                     },
-                    swipeRight: function ( ) {
-                        this.parent( ).carousel( 'prev' );
+                    swipeRight: function () {
+                        this.parent().carousel('prev');
                     },
                     threshold: 0
-                } );
-    
-            } );
+                });
+
+            });
         };
     }
 
@@ -228,18 +230,16 @@ class Home extends Component {
                 {/* </Link> */}
 
 
-
-
                 {/*!--------- Section Product ----------!*/}
                 <div className="black-section">
                     <div className="black-image-wrapper">
-                    <img 
-                        src={Smart} 
-                        sizes="100vw" alt="" className="image-13" />
+                        <img
+                            src={Large} srcSet={`${Small} 500w, ${Medium} 800w,${Large} 1801w`}
+                            sizes="100vw" alt="" className="image-13" />
                     </div>
                     <div className="black-text-wrapper black">
                         <div className="headings-wrapper">
-                            <h6 className="heading-3 black">Our Research</h6>
+                            <h6 className="heading-3 black">Our Product</h6>
                             <h3 className="heading-4 black">Smart Watch</h3>
                         </div>
                         <div className="text-block-5 black">
