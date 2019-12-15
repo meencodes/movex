@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 // import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
 // import arrow from '../assets/images/tooltip/arrow_down.svg'
 // import bgBtm from '../assets/images/btm/btm.jpg'
+import Smart from '../assets/images/watch/5db8944f21f4f786db9b2c3.png'
 
 import { Typography, Container } from '@material-ui/core'
 
@@ -17,7 +18,7 @@ import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 
 import '../App.css';
 import '../bootstrap-touch-slider.css';
-import $ from 'jquery'
+import $ from 'jquery';
 
 import { Link } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
@@ -230,7 +231,24 @@ class Home extends Component {
 
 
                 {/*!--------- Section Product ----------!*/}
-
+                <div className="black-section">
+                    <div className="black-image-wrapper">
+                    <img 
+                        src={Smart} 
+                        sizes="100vw" alt="" className="image-13" />
+                    </div>
+                    <div className="black-text-wrapper black">
+                        <div className="headings-wrapper">
+                            <h6 className="heading-3 black">Our Research</h6>
+                            <h3 className="heading-4 black">Smart Watch</h3>
+                        </div>
+                        <div className="text-block-5 black">
+                            The innovative for life
+                            Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX
+                            Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
+                        </div>
+                    </div>
+                </div>
 
 
                 {/* <Section1 maxWidth='xl'> */}
