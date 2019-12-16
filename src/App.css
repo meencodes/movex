@@ -9,14 +9,14 @@ body {
 }
 
 #app {
-    font-family: 'Sukhumvit';
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
     text-decoration: none;
     letter-spacing: 0.1em;
     color: rgb(236, 236, 236);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 a:hover {
   /* color: rgb(238,67,45); */

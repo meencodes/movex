@@ -239,7 +239,7 @@ class Home extends Component {
                     </div>
                     <div className="black-text-wrapper black">
                         <div className="headings-wrapper">
-                            <h6 className="heading-3 black">Our Product</h6>
+                            <h6 className="heading-3 black">Advanced Technology</h6>
                             <h3 className="heading-4 black">Smart Watch</h3>
                         </div>
                         <div className="text-block-5 black">
@@ -247,6 +247,16 @@ class Home extends Component {
                             Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX
                             Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
                         </div>
+                    </div>
+                </div>
+
+                <div className="section card">
+                    <div className="text-wrapper home">
+                        <div className="headings-wrapper">
+                            <h6 className="heading-3">Our Research</h6>
+                            <h3 className="heading-4">Card</h3>
+                        </div>
+                        <div className="text-block-5 card">Coming Soon</div>
                     </div>
                 </div>
 
