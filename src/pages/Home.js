@@ -6,9 +6,17 @@ import Footer from '../components/Footer'
 // import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
 // import arrow from '../assets/images/tooltip/arrow_down.svg'
 // import bgBtm from '../assets/images/btm/btm.jpg'
+
+//Watch
 import Small from '../assets/images/watch/watch_small.png';
 import Medium from '../assets/images/watch/watch_medium.png';
 import Large from '../assets/images/watch/watch_large.png';
+
+//BTM
+import BtmLarge from '../assets/images/btm/large-kiosk.png';
+import BtmLarge01 from '../assets/images/btm/large-kiosk-01.png';
+import BtmSmall from '../assets/images/btm/small-kiosk.png';
+import BtmSmall01 from '../assets/images/btm/small-kiosk-01.png'
 
 import { Typography, Container } from '@material-ui/core'
 
@@ -229,8 +237,81 @@ class Home extends Component {
                 </section>
                 {/* </Link> */}
 
+                {/* New 4 Section */}
+                <div className="section four-section">
+                    <div className="four w-container">
+                        <h3 className="heading-4 four-heading">Four Section</h3>
+                        <div className="four-wrapper upper">
+                            <div className="text-wrapper four">
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddba9c5d31f0f86116d05ee_Group%2073.svg" alt="" className="image-50" />
+                                <div className="icon-text-wrapper">
+                                    <h3 className="heading-4 icon-title tablet home-four">Payment Service</h3>
+                                    <div className="text-block-5 four">
+                                        <strong className="bold-text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="text-wrapper four _2">
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                <div className="icon-text-wrapper">
+                                    <h3 className="heading-4 icon-title tablet home-four">Platform</h3>
+                                    <div className="text-block-5 four">
+                                        <strong className="bold-text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="four-wrapper lower">
+                            <div className="text-wrapper four _3">
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                <div className="icon-text-wrapper">
+                                    <h3 className="heading-4 icon-title tablet home-four">Coin implement</h3>
+                                    <div className="text-block-5 four">
+                                        <strong className="bold-text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="text-wrapper four _4">
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                <div className="icon-text-wrapper">
+                                    <h3 className="heading-4 icon-title tablet home-four">Other</h3>
+                                    <div className="text-block-5 four">
+                                        <strong className="bold-text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="vertical-gray-line"></div>
+                    </div>
+                </div>
 
                 {/*!--------- Section Product ----------!*/}
+                <div className="kiosk-section">
+                    <div className="headings-wrapper tabs">
+                        <div className="wrapper-2">
+                            <h6 className="heading-3">Clean Design</h6>
+                            <h3 className="heading-4 home">Bitcoin ATM</h3>
+                        </div>
+                    </div>
+                    <div className="kiosk-box">
+                        <div className="left-image-wrapper">
+                            <img src={BtmLarge} srcSet={`${BtmSmall} 500w,${BtmLarge} 1428w`}
+                                sizes="100vw" alt />
+                        </div>
+                        <div className="right-image-wrapper">
+                            <img src={BtmLarge01} srcSet={`${BtmSmall01} 500w,${BtmLarge01} 1428w`}
+                                sizes="100vw" alt />
+                        </div>
+                    </div>
+                    <div className="container-3 home w-container">
+                        <h3 className="heading-5">
+                            <b>Bitcoin ATM (Automated Teller Machine)</b>&nbsp;
+                            A kiosk that allows a person to purchase Bitcoin through QR Code on the application.
+                            Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
+                        </h3>
+                    </div>
+                </div>
+
                 <div className="black-section">
                     <div className="black-image-wrapper">
                         <img
@@ -239,10 +320,10 @@ class Home extends Component {
                     </div>
                     <div className="black-text-wrapper black">
                         <div className="headings-wrapper">
-                            <h6 className="heading-3 black">Advanced Technology</h6>
+                            <h6 className="heading-3 black">Our Product</h6>
                             <h3 className="heading-4 black">Smart Watch</h3>
                         </div>
-                        <div className="text-block-5 black">
+                        <div className="text-block-5 black home">
                             The innovative for life
                             Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX
                             Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
