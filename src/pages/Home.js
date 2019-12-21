@@ -212,31 +212,6 @@ class Home extends Component {
                     </a>
                 </div>
 
-                {/* <Link to="/atmbitcoin"> */}
-                <section className="hero btm-bitcoin">
-                    <div className="container">
-                        <div className="title textbox-wrap">
-                            <h2 className="title-heading">Btm Bitcoin</h2>
-                            <h3 className="title-sub-heading">Bitcoin ATM (Automated Teller Machine)</h3>
-                            <p className="title-details">A kiosk that allows a person to purchase Bitcoin through QR Code on the application.<br />
-                                Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.</p>
-                        </div>
-                    </div>
-                </section>
-                {/* </Link> */}
-
-                {/* <Link to="/watch"> */}
-                <section className="hero watch">
-                    <div className="container">
-                        <div className="title title-dark textbox-wrap">
-                            <h2 className="title-heading-watch"></h2>
-                            <h3 className="title-sub-heading">The innovative for life. Ultimate moves with MoveX<br />
-                                the innovative online 4G ledger which provide a unique style of life.</h3>
-                        </div>
-                    </div>
-                </section>
-                {/* </Link> */}
-
                 {/* New 4 Section */}
                 <div className="section four-section">
                     <div className="four w-container">
@@ -247,7 +222,7 @@ class Home extends Component {
                                 <div className="icon-text-wrapper">
                                     <h3 className="heading-4 icon-title tablet home-four">Payment Service</h3>
                                     <div className="text-block-5 four">
-                                        <strong className="bold-text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                                        <strong className="bold-text-2">We provide system that connect to merchant. It can be in a form of hardware and software that connecting to cryptocurrencies and fiat currencies.</strong>
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +231,7 @@ class Home extends Component {
                                 <div className="icon-text-wrapper">
                                     <h3 className="heading-4 icon-title tablet home-four">Platform</h3>
                                     <div className="text-block-5 four">
-                                        <strong className="bold-text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                                        <strong className="bold-text-2">We make website and application according to requirement of the customer.</strong>
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +242,7 @@ class Home extends Component {
                                 <div className="icon-text-wrapper">
                                     <h3 className="heading-4 icon-title tablet home-four">Coin implement</h3>
                                     <div className="text-block-5 four">
-                                        <strong className="bold-text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                                        <strong className="bold-text-2">We create coins and provide services that support coin implementation including social media and platform. We take care of every steps till the coin lauched to the public.</strong>
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +251,7 @@ class Home extends Component {
                                 <div className="icon-text-wrapper">
                                     <h3 className="heading-4 icon-title tablet home-four">Other</h3>
                                     <div className="text-block-5 four">
-                                        <strong className="bold-text-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                                        <strong className="bold-text-2">We provide OEM services based on the product that customer request and rebranding as the customer own brand. In the OEM part we do have different kinds of products available.</strong>
                                     </div>
                                 </div>
                             </div>
