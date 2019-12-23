@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Container } from '@material-ui/core';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export class AtmBit extends Component {
     render() {
         return (
             <Main>
+                <Header />
                 <Content_sub>
                     55
                 </Content_sub>
+                <Footer />
             </Main>
         )
     }

@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Header from '../components/Header'
-
 import Footer from '../components/Footer'
-// import banner from '../assets/images/architectural-design-architecture-buildings-city-374811.jpg'
-// import arrow from '../assets/images/tooltip/arrow_down.svg'
-// import bgBtm from '../assets/images/btm/btm.jpg'
 
 //Watch
 import Small from '../assets/images/watch/watch_small.png';
@@ -89,7 +85,7 @@ class Home extends Component {
         return (
             <div id='main'>
 
-                {/* <Test /> */}
+                <Header />
 
                 <div id="bootstrap-touch-slider" className="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
@@ -305,7 +301,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-
+                
                 <div className="section card">
                     <div className="text-wrapper home">
                         <div className="headings-wrapper">
@@ -315,7 +311,10 @@ class Home extends Component {
                         <div className="text-block-5 card">Coming Soon</div>
                     </div>
                 </div>
-
+                
+                <div className="cryptomap-section">
+                    
+                </div>
 
                 {/* <Section1 maxWidth='xl'> */}
                 < section id='about-section' >
@@ -403,22 +402,23 @@ class Home extends Component {
                 </ section >
                 {/* </Section1> */}
 
-                < Container id='Container' >
-                    <Typography component="div" style={{ backgroundColor: '#ffffff', minHeight: '100px', padding: '5vh', textAlign: 'center', color: 'white', fontFamily: 'Sukhumvit' }}>
-                        Content No. 3
-                    </Typography>
-                </Container >
-                <br />
-
+                <div className="partnerships-section">
+                    <div className="content-wrapper home">
+                        <h6 className="heading-2">Partnerships</h6>
+                        <h2 className="h2 partnerships">A Partnerships</h2>
+                        <div className="logo-wrapper">
+                            <h3 className="logo-partner">Logo</h3>
+                            <h3 className="logo-partner">Logo</h3>
+                            <h3 className="logo-partner">Logo</h3>
+                            <h3 className="logo-partner">Logo</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <Footer />
             </div >
         )
     }
 }
 
-export default Home
-
-const Session2 = styled.div`
-    left: 5vw;
-    bottom: 5vh;
-    position: absolute;
- `
+export default Home;
