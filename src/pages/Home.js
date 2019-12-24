@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -14,6 +13,8 @@ import BtmLarge01 from '../assets/images/btm/large-kiosk-01.png';
 import BtmSmall from '../assets/images/btm/small-kiosk.png';
 import BtmSmall01 from '../assets/images/btm/small-kiosk-01.png'
 
+//Map
+import Map from '../components/Map';
 import { Typography, Container } from '@material-ui/core'
 
 
@@ -28,6 +29,8 @@ import $ from 'jquery';
 
 import { Link } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
+
+const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD6aGyzvfGlncrrGbEe1M5OwKbOuSGpegk`;
 
 class Home extends Component {
     constructor(props) {
@@ -276,7 +279,7 @@ class Home extends Component {
                     </div>
                     <div className="container-3 home w-container">
                         <h3 className="heading-5">
-                            <b>Bitcoin ATM (Automated Teller Machine)</b>&nbsp;
+                            <b>Bitcoin ATM</b> (Automated Teller Machine)&nbsp;
                             A kiosk that allows a person to purchase Bitcoin through QR Code on the application.
                             Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
                         </h3>
@@ -313,7 +316,7 @@ class Home extends Component {
                 </div>
                 
                 <div className="cryptomap-section">
-                    
+                    <div classNam="image-text-wrapper home"></div>
                 </div>
 
                 {/* <Section1 maxWidth='xl'> */}
@@ -401,6 +404,15 @@ class Home extends Component {
                     </div>
                 </ section >
                 {/* </Section1> */}
+
+                <div className="maps-section">
+                    <Map
+                        googleMapURL= {mapURL}
+                        containerElement= {<div style={{ height: '500px'}} />}
+                        mapElement= {<div style={{ height: '100%'}} />}
+                        loadingElement= {<p>Movex</p>}
+                    />
+                </div>
 
                 <div className="partnerships-section">
                     <div className="content-wrapper home">
