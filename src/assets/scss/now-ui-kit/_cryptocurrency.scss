@@ -1,0 +1,255 @@
+.cryptocurrency-hero-section {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 100px;
+    padding-right: 130px;
+    padding-bottom: 50px;
+    padding-left: 130px;
+    background-color: #000;
+}
+
+.cryptocurrency-hero-content-wrapper {
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 85vh;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+}
+.hero-headings-wrapper {
+    padding-top: 150px;
+}
+.hero-headings-wrapper.white {
+    max-width: none;
+    margin-bottom: 0px;
+    padding-top: 150px;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.little-heading {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 13px;
+    color: #222;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.little-heading.white {
+    color: #fff;
+    text-transform: uppercase;
+}
+.little-heading.white.cryptocurrency {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.big-heading-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+.big-heading {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: -25px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-size: 72px;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 0.09em;
+    text-transform: none;
+}
+.big-heading.upper-hero {
+    width: 460px;
+    margin-bottom: 20px;
+    color: #1b1b1b;
+    line-height: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.big-heading.upper-hero.white {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+    line-height: 80px;
+}
+.medium-heading {
+    max-width: 470px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #1b1b1b;
+    font-size: 20px;
+    line-height: 41px;
+    font-weight: 400;
+}
+.medium-heading.white {
+    position: relative;
+    z-index: 1;
+    max-width: 530px;
+    color: #c5c5c5;
+}
+
+@media screen and (max-width: 991px) {
+    .cryptocurrency-hero-section {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .cryptocurrency-hero-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .cryptocurrency-hero-content-wrapper {
+        height: auto;
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 80px;
+        margin-left: 0px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .hero-headings-wrapper.white {
+        margin-bottom: 30px;
+    }
+    .medium-heading.white {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cryptocurrency-hero-section {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .hero-headings-wrapper.white {
+        width: 60%;
+    }
+    .little-heading.white {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .big-heading-wrapper {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .big-heading.upper-hero {
+        margin-bottom: 0px;
+        font-size: 48px;
+    }
+    .big-heading.upper-hero.white {
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 900;
+    }
+    .medium-heading.white {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .cryptocurrency-hero-section {
+        margin-bottom: 50px;
+    }
+    .cryptocurrency-hero-content-wrapper {
+        height: auto;
+        margin-bottom: 60px;
+    }
+    .hero-headings-wrapper.white {
+        width: 100%;
+        margin-bottom: 0px;
+        padding-top: 100px;
+    }
+    .little-heading.white.cryptocurrency {
+        margin-bottom: 10px;
+    }
+    .big-heading.upper-hero.white {
+        margin-bottom: 10px;
+        line-height: 50px;
+    }
+    .medium-heading {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .medium-heading.white {
+        margin-bottom: 20px;
+    }
+}

@@ -50,7 +50,7 @@ class Header extends Component {
           <nav className="nav">
             <ul className="nav-list nav-list-mobile">
               <li className="nav-item">
-                <Scroll to='main' spy={true} smooth={true} offset={0} duration={500} className="action">
+                <Scroll to='main' spy={true} smooth={true} offset={0} duration={1500} className="action">
                   <Link to="/" className="nav-link-movex" />
                 </Scroll>
               </li>
@@ -65,7 +65,7 @@ class Header extends Component {
             </ul>
               <ul className="nav-list nav-list-larger">
                 <li className="nav-item nav-item-hidden">
-                  <Scroll to='main' spy={true} smooth={true} offset={0} duration={500} className="action">
+                  <Scroll to='main' spy={true} smooth={true} offset={0} duration={1500} className="action">
                     <Link to="/" className="nav-link nav-link-movex" />
                   </Scroll>
                 </li>

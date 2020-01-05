@@ -1,0 +1,47 @@
+.image-text-wrapper {
+    max-width: 1440px;
+    margin-top: 10em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 130px;
+    padding-left: 150px;
+    
+}
+
+.section.Dark {
+    background-color: #000;
+}
+.maps-section {
+    margin-bottom: 0%;
+    margin-top: -10%;
+    position: relative;
+    z-index: 98;
+    clear: both;
+}
+.wrapper-maps {
+    width: 66.67%;
+}
+.col-center {
+    margin-left: 16.67%;
+}
+.cryptomap-maps {
+    height: 80vh;
+    max-height: 530px;
+    width: 100%;
+    margin-bottom: 30px;
+    /* filter: drop-shadow(0px 2px 7px rgba(0,0,0,0.3)); */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    position: relative;
+}
+.map-overview {
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 992px) {
+    .wrapper-maps {
+        width: 90%;
+    }
+    .col-center {
+        margin-left: 5%;
+    }
+}

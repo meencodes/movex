@@ -27,8 +27,10 @@ import '../App.css';
 import '../bootstrap-touch-slider.css';
 import $ from 'jquery';
 
-import { Link } from 'react-router-dom';
-import { Link as Scroll } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
+
+// import { Link } from 'react-router-dom';
+// import { Link as Scroll } from 'react-scroll';
 
 const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD6aGyzvfGlncrrGbEe1M5OwKbOuSGpegk`;
 
@@ -40,48 +42,6 @@ class Home extends Component {
             dow: '',
             animationType: ''
         }
-    }
-
-    componentDidMount() {
-        function bsTouchSlider(options) {
-            var carousel = $(".carousel");
-            return this.each(function () {
-
-                function doAnimations(elems) {
-                    //Cache the animationend event in a variable
-                    var animEndEv = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                    elems.each(function () {
-                        var $this = $(this), $animationType = $this.data('animation');
-                        $this.addClass($animationType).one(animEndEv, function () {
-                            $this.removeClass($animationType);
-                        });
-                    });
-                }
-
-                //Variables on page load
-                var $firstAnimatingElems = carousel.find('.item:first').find("[data-animation ^= 'animated']");
-                //Initialize carousel
-                carousel.carousel();
-                //Animate captions in first slide on page load
-                doAnimations($firstAnimatingElems);
-                //Other slides to be animated on carousel slide event
-                carousel.on('slide.bs.carousel', function (e) {
-                    var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
-                    doAnimations($animatingElems);
-                });
-                //swipe initial 
-                $(".carousel .carousel-inner").swipe({
-                    swipeLeft: function (event, direction, distance, duration, fingerCount) {
-                        this.parent().carousel('next');
-                    },
-                    swipeRight: function () {
-                        this.parent().carousel('prev');
-                    },
-                    threshold: 0
-                });
-
-            });
-        };
     }
 
     render() {
@@ -214,78 +174,92 @@ class Home extends Component {
                 {/* New 4 Section */}
                 <div className="section four-section">
                     <div className="four w-container">
-                        <h3 className="heading-4 four-heading">Four Section</h3>
-                        <div className="four-wrapper upper">
-                            <div className="text-wrapper four">
-                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddba9c5d31f0f86116d05ee_Group%2073.svg" alt="" className="image-50" />
-                                <div className="icon-text-wrapper">
-                                    <h3 className="heading-4 icon-title tablet home-four">Payment Service</h3>
-                                    <div className="text-block-5 four">
-                                        <strong className="bold-text-2">We provide system that connect to merchant. It can be in a form of hardware and software that connecting to cryptocurrencies and fiat currencies.</strong>
+                        <Fade bottom>
+                            <h3 className="heading-4 four-heading">Four Section</h3>
+                        </Fade>
+                        <Fade bottom>
+                            <div className="four-wrapper upper">
+                                <div className="text-wrapper four">
+                                    <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddba9c5d31f0f86116d05ee_Group%2073.svg" alt="" className="image-50" />
+                                    <div className="icon-text-wrapper">
+                                        <h3 className="heading-4 icon-title tablet home-four">Payment Service</h3>
+                                        <div className="text-block-5 four">
+                                            <strong className="bold-text-2">We provide system that connect to merchant. It can be in a form of hardware and software that connecting to cryptocurrencies and fiat currencies.</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="text-wrapper four _2">
+                                    <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                    <div className="icon-text-wrapper">
+                                        <h3 className="heading-4 icon-title tablet home-four">Platform</h3>
+                                        <div className="text-block-5 four">
+                                            <strong className="bold-text-2">We make website and application according to requirement of the customer.</strong>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-wrapper four _2">
-                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
-                                <div className="icon-text-wrapper">
-                                    <h3 className="heading-4 icon-title tablet home-four">Platform</h3>
-                                    <div className="text-block-5 four">
-                                        <strong className="bold-text-2">We make website and application according to requirement of the customer.</strong>
+                        </Fade>
+                        <Fade bottom>
+                            <div className="four-wrapper lower">
+                                <div className="text-wrapper four _3">
+                                    <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                    <div className="icon-text-wrapper">
+                                        <h3 className="heading-4 icon-title tablet home-four">Coin implement</h3>
+                                        <div className="text-block-5 four">
+                                            <strong className="bold-text-2">We create coins and provide services that support coin implementation including social media and platform. We take care of every steps till the coin lauched to the public.</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="text-wrapper four _4">
+                                    <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                    <div className="icon-text-wrapper">
+                                        <h3 className="heading-4 icon-title tablet home-four">Other</h3>
+                                        <div className="text-block-5 four">
+                                            <strong className="bold-text-2">We provide OEM services based on the product that customer request and rebranding as the customer own brand. In the OEM part we do have different kinds of products available.</strong>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="four-wrapper lower">
-                            <div className="text-wrapper four _3">
-                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
-                                <div className="icon-text-wrapper">
-                                    <h3 className="heading-4 icon-title tablet home-four">Coin implement</h3>
-                                    <div className="text-block-5 four">
-                                        <strong className="bold-text-2">We create coins and provide services that support coin implementation including social media and platform. We take care of every steps till the coin lauched to the public.</strong>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="text-wrapper four _4">
-                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
-                                <div className="icon-text-wrapper">
-                                    <h3 className="heading-4 icon-title tablet home-four">Other</h3>
-                                    <div className="text-block-5 four">
-                                        <strong className="bold-text-2">We provide OEM services based on the product that customer request and rebranding as the customer own brand. In the OEM part we do have different kinds of products available.</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="vertical-gray-line"></div>
+                            <div className="vertical-gray-line"></div>
+                        </Fade>
                     </div>
                 </div>
 
                 {/*!--------- Section Product ----------!*/}
                 <div className="kiosk-section">
                     <div className="headings-wrapper tabs">
-                        <div className="wrapper-2">
-                            <h6 className="heading-3">Clean Design</h6>
-                            <h3 className="heading-4 home">Bitcoin ATM</h3>
-                        </div>
+                        <Fade bottom>
+                            <div className="wrapper-2">
+                                <h6 className="heading-3">Clean Design</h6>
+                                <h3 className="heading-4 home">Crypto Currency ATM</h3>
+                            </div>
+                        </Fade>
                     </div>
                     <div className="kiosk-box">
-                        <div className="left-image-wrapper">
-                            <img src={BtmLarge} srcSet={`${BtmSmall} 500w,${BtmLarge} 1428w`}
-                                sizes="100vw" alt />
-                        </div>
-                        <div className="right-image-wrapper">
-                            <img src={BtmLarge01} srcSet={`${BtmSmall01} 500w,${BtmLarge01} 1428w`}
-                                sizes="100vw" alt />
-                        </div>
+                        <Fade left>
+                            <div className="left-image-wrapper">
+                                <img src={BtmLarge} srcSet={`${BtmSmall} 500w,${BtmLarge} 1428w`}
+                                    sizes="100vw" alt />
+                            </div>
+                        </Fade>
+                        <Fade right>
+                            <div className="right-image-wrapper">
+                                <img src={BtmLarge01} srcSet={`${BtmSmall01} 500w,${BtmLarge01} 1428w`}
+                                    sizes="100vw" alt />
+                            </div>
+                        </Fade>
                     </div>
                     <div className="container-3 home w-container">
-                        <h3 className="heading-5">
-                            <b>Bitcoin ATM</b> (Automated Teller Machine)&nbsp;
-                            A kiosk that allows a person to purchase Bitcoin through QR Code on the application.
-                            Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
+                        <Fade bottom>
+                            <h3 className="heading-5">
+                                <b>Bitcoin ATM</b> (Automated Teller Machine)&nbsp;
+                                A kiosk that allows a person to purchase Bitcoin through QR Code on the application.
+                                Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
                         </h3>
+                        </Fade>
                     </div>
                 </div>
-
+                
                 <div className="black-section">
                     <div className="black-image-wrapper">
                         <img
@@ -293,18 +267,22 @@ class Home extends Component {
                             sizes="100vw" alt="" className="image-13" />
                     </div>
                     <div className="black-text-wrapper black">
-                        <div className="headings-wrapper">
-                            <h6 className="heading-3 black">Our Product</h6>
-                            <h3 className="heading-4 black">Smart Watch</h3>
+                        <Fade bottom>
+                            <div className="headings-wrapper">
+                                <h6 className="heading-3 black">Our Product</h6>
+                                <h3 className="heading-4 black">Smart Watch</h3>
+                            </div>
+                        </Fade>
+                        <Fade right>
+                            <div className="text-block-5 black home">
+                                The innovative for life
+                                Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX
+                                Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
                         </div>
-                        <div className="text-block-5 black home">
-                            The innovative for life
-                            Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX
-                            Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
-                        </div>
+                        </Fade>
                     </div>
                 </div>
-                
+
                 <div className="section card">
                     <div className="text-wrapper home">
                         <div className="headings-wrapper">
@@ -314,13 +292,9 @@ class Home extends Component {
                         <div className="text-block-5 card">Coming Soon</div>
                     </div>
                 </div>
-                
-                <div className="cryptomap-section">
-                    <div classNam="image-text-wrapper home"></div>
-                </div>
 
                 {/* <Section1 maxWidth='xl'> */}
-                < section id='about-section' >
+                {/* < section id='about-section' >
                     <div className='about-box'>
                         <div className='inner-about-box'>
 
@@ -402,17 +376,32 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </ section >
+                </ section > */}
                 {/* </Section1> */}
 
-                <div className="maps-section">
-                    <Map
-                        googleMapURL= {mapURL}
-                        containerElement= {<div style={{ height: '500px'}} />}
-                        mapElement= {<div style={{ height: '100%'}} />}
-                        loadingElement= {<p>Movex</p>}
-                    />
+                <div className="cryptomap-section">
+                    <div className="image-text-wrapper home">
+                        Cryptomap
+                    </div>
+
+                    <div className="section Dark">
+
+                    </div>
+                    <div className="maps-section">
+                        <div className="wrapper-maps col-center">
+                            <div className="cryptomap-maps">
+                                <Map
+                                    googleMapURL={mapURL}
+                                    containerElement={<div className="map-overview" />}
+                                    mapElement={<div style={{ height: '100%' }} />}
+                                    loadingElement={<p>Movex</p>}
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
 
                 <div className="partnerships-section">
                     <div className="content-wrapper home">
@@ -426,7 +415,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                
+
                 <Footer />
             </div >
         )
