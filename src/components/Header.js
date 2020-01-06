@@ -71,7 +71,7 @@ class Header extends Component {
                 </li>
 
                 <li className="nav-item">
-                  <Link to="/atmbitcoin" className="nav-link">Kiosk BTM</Link>
+                  <Link to="/atmbitcoin" className="nav-link">Bitcoin BTM</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/watch" className="nav-link">Watch</Link>

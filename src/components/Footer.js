@@ -39,11 +39,11 @@ class Footer extends Component {
                         </div>
                         <div className="footer-links-item">
                             <h3 className="footer-heading">Follow us</h3>
-                            <div class="social-logos-wrapper foot">
-                                <a href="https://www.facebook.com/Koleda.Co/" target="_blank" class="w-inline-block" />
-                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5db94bb62067faede0895613_Facebook.svg" alt="facebook icon" width="10" class="image-15" />
-                                <a href="https://www.instagram.com/koleda.co/" target="_blank" class="w-inline-block" />
-                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5db94bb673588376c1dce171_Instagram.svg" alt="instagram icon" class="image-17" />
+                            <div className="social-logos-wrapper foot">
+                                <a href="https://www.facebook.com/Koleda.Co/" target="_blank" className="w-inline-block" />
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5db94bb62067faede0895613_Facebook.svg" alt="facebook icon" width="10" className="image-15" />
+                                <a href="https://www.instagram.com/koleda.co/" target="_blank" className="w-inline-block" />
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5db94bb673588376c1dce171_Instagram.svg" alt="instagram icon" className="image-17" />
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ class Footer extends Component {
                     <div className="white-orange-headings-wrapper">
                         <h3 className="heading-6">MoveX for business?</h3>
                         <h3 className="heading-7">
-                            <a href="mailto:max.interbrick@movex.co" class="link-4">Learn more</a>
+                            <a href="mailto:max.interbrick@movex.co" className="link-4">Learn more</a>
                         </h3>
                     </div>
                     <div className="last-title-headings">

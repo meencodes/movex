@@ -15,9 +15,9 @@ const routes = () => (
         <Route exact path='/' component={Home}/>
         <Route path='/atmbitcoin' component={AtmBit} />
         <Route path='/watch' component={Watch} />
-        <Route path='/card' component={Card} />
+        {/* <Route path='/card' component={Card} />
         <Route path='/cryptomap' component={Cryptomap} />
-        <Route path='/blockchain' component={Blockchain} />
+        <Route path='/blockchain' component={Blockchain} /> */}
         <Route component={NotFound} />
     </Switch>
 )

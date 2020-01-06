@@ -380,9 +380,9 @@ class Home extends Component {
                 {/* </Section1> */}
 
                 <div className="cryptomap-section">
-                    <div className="image-text-wrapper home">
+                    {/* <div className="image-text-wrapper home">
                         Cryptomap
-                    </div>
+                    </div> */}
 
                     <div className="section Dark">
 

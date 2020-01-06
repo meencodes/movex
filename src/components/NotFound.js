@@ -6,7 +6,7 @@ class NotFound extends Component {
         return (
             <Container>
                 <Con>
-                    <h1>404</h1>
+                    <h1>404 NotFound</h1>
                 </Con>
             </Container>
         )
