@@ -34,7 +34,7 @@ export class AtmBit extends Component {
                 </div>
                 <div className="section cryptocurrency">
                     <div className="feature-wrapper cryptocurrency">
-                        <div className="text-wrapper cryptocurrency">
+                        <div className="text-feature-wrapper cryptocurrency">
                             <div className="headings-wrapper">
                                 <h6 className="heading-3">REDEFINING INFRARED HEATING</h6>
                                 <Fade bottom>

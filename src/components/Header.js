@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
-import { Link as Scroll } from 'react-scroll'
+import { Link as Scroll } from 'react-scroll';
+import i18n from 'i18next';
+
+function handleClick(lang) {
+  i18n.changeLanguage(lang);
+}
 
 class Header extends Component {
   constructor(props) {
@@ -63,30 +68,38 @@ class Header extends Component {
               </li>
 
             </ul>
-              <ul className="nav-list nav-list-larger">
-                <li className="nav-item nav-item-hidden">
-                  <Scroll to='main' spy={true} smooth={true} offset={0} duration={1500} className="action">
-                    <Link to="/" className="nav-link nav-link-movex" />
-                  </Scroll>
-                </li>
+            <ul className="nav-list nav-list-larger">
+              <li className="nav-item nav-item-hidden">
+                <Scroll to='main' spy={true} smooth={true} offset={0} duration={1500} className="action">
+                  <Link to="/" className="nav-link nav-link-movex" />
+                </Scroll>
+              </li>
 
-                <li className="nav-item">
-                  <Link to="/atmbitcoin" className="nav-link">Bitcoin BTM</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/watch" className="nav-link">Watch</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/card" className="nav-link">Card</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/cryptomap" className="nav-link">Cryptomap</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/blockchain" className="nav-link">Blockchain</Link>
-                </li>
+              <li className="nav-item">
+                <Link to="/atmbitcoin" className="nav-link">Bitcoin BTM</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/watch" className="nav-link">Watch</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/card" className="nav-link">Card</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/cryptomap" className="nav-link">Cryptomap</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/blockchain" className="nav-link">Blockchain</Link>
+              </li>
 
-              </ul>
+              <li className="nav-item">
+                <button onClick={() => handleClick('th')}>
+                  ภาษาไทย
+                  </button>
+                <button onClick={() => handleClick('en')}>
+                  English
+                </button>
+              </li>
+            </ul>
 
           </nav>
         </div>

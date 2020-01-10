@@ -29,56 +29,47 @@ import $ from 'jquery';
 
 import Fade from 'react-reveal/Fade';
 
+import { translate } from 'react-i18next'
+
 // import { Link } from 'react-router-dom';
 // import { Link as Scroll } from 'react-scroll';
 
 const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD6aGyzvfGlncrrGbEe1M5OwKbOuSGpegk`;
+const Home = ({ t }) => {
+    return (
+        <div id='main'>
 
-class Home extends Component {
-    constructor(props) {
-        super(props);
+            <Header />
 
-        this.state = {
-            dow: '',
-            animationType: ''
-        }
-    }
-
-    render() {
-        return (
-            <div id='main'>
-
-                <Header />
-
-                <div id="bootstrap-touch-slider" className="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+            <div id="bootstrap-touch-slider" className="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
 
-                    <div class="carousel-indicators">
-                        <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
-                        <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
-                    </div>
+                <div class="carousel-indicators">
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                </div>
 
 
-                    <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner" role="listbox">
 
 
-                        <div class="item active slide_1">
+                    <div class="item active slide_1">
 
 
-                            <div class="bs-slider-overlay"></div>
+                        <div class="bs-slider-overlay"></div>
 
-                            <div class="container">
-                                <div class="row">
-                                    <div class="slide-text slide_style_left kanit">
-                                        <h1 data-animation="animated fadeInRight">OPEN NOW !</h1>
-                                        <h2 data-animation="animated fadeInLeft">MOVEX,</h2>
-                                        <br />
+                        <div class="container">
+                            <div class="row">
+                                <div class="slide-text slide_style_left kanit">
+                                    <h1 data-animation="animated fadeInRight">OPEN NOW !</h1>
+                                    <h2 data-animation="animated fadeInLeft">MOVEX,</h2>
+                                    <br />
 
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            {/* <Session2>
+                        {/* <Session2>
                                 <Scroll
                                     className="action"
                                     to='about-section'
@@ -93,208 +84,208 @@ class Home extends Component {
                                     <span className="action_message">Product</span>
                                 </Scroll>
                             </Session2> */}
-                        </div>
+                    </div>
 
 
 
-                        <div class="item slide_2">
+                    <div class="item slide_2">
 
 
-                            <div class="bs-slider-overlay"></div>
+                        <div class="bs-slider-overlay"></div>
 
-                            <div class="container">
-                                <div class="row">
+                        <div class="container">
+                            <div class="row">
 
-                                    <div class="slide-text slide_style_left">
-                                        <h1 data-animation="animated fadeInRight">E<img src="/images/logo-2-white.png" class="logo-2-small" />ANYWHERE
+                                <div class="slide-text slide_style_left">
+                                    <h1 data-animation="animated fadeInRight">E<img src="/images/logo-2-white.png" class="logo-2-small" />ANYWHERE
                             <br />ELECTRIC FOR ANY CARS</h1>
-                                        <br />
-                                        <a href="https://itunes.apple.com/th/app/ea-anywhere/id1240656004" target="_blank" class="btn btn-store" data-animation="animated fadeInLeft">
-                                            <img src="/images/app_store_btn.png" alt="" />
-                                        </a>
-                                        <a href="https://play.google.com/store/apps/details?id=evcl.energyabsolute.co.th.evcl" target="_blank" class="btn btn-store" data-animation="animated fadeInRight">
-                                            <img src="/images/play_store_btn.png" alt="" />
-                                        </a>
-                                    </div>
+                                    <br />
+                                    <a href="https://itunes.apple.com/th/app/ea-anywhere/id1240656004" target="_blank" class="btn btn-store" data-animation="animated fadeInLeft">
+                                        <img src="/images/app_store_btn.png" alt="" />
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=evcl.energyabsolute.co.th.evcl" target="_blank" class="btn btn-store" data-animation="animated fadeInRight">
+                                        <img src="/images/play_store_btn.png" alt="" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
 
-                        <div class="item slide_3">
+                    <div class="item slide_3">
 
 
-                            <div class="bs-slider-overlay"></div>
+                        <div class="bs-slider-overlay"></div>
 
-                            <div class="slide-text slide_style_right">
-                                <h1 data-animation="animated flipInX">E<img src="/images/logo-2-white.png" class="logo-2-small" />ANYWHERE
+                        <div class="slide-text slide_style_right">
+                            <h1 data-animation="animated flipInX">E<img src="/images/logo-2-white.png" class="logo-2-small" />ANYWHERE
                     <br />ELECTRIC FOR ANY CARS</h1>
 
-                                <br />
-                                <a href="https://itunes.apple.com/th/app/ea-anywhere/id1240656004" target="_blank" class="btn btn-store" data-animation="animated fadeInLeft">
-                                    <img src="/images/app_store_btn.png" alt="" />
-                                </a>
-                                <a href="https://play.google.com/store/apps/details?id=evcl.energyabsolute.co.th.evcl" target="_blank" class="btn btn-store" data-animation="animated fadeInRight">
-                                    <img src="/images/play_store_btn.png" alt="" />
-                                </a>
+                            <br />
+                            <a href="https://itunes.apple.com/th/app/ea-anywhere/id1240656004" target="_blank" class="btn btn-store" data-animation="animated fadeInLeft">
+                                <img src="/images/app_store_btn.png" alt="" />
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=evcl.energyabsolute.co.th.evcl" target="_blank" class="btn btn-store" data-animation="animated fadeInRight">
+                                <img src="/images/play_store_btn.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="item active slide_4">
+
+
+                        <div class="bs-slider-overlay"></div>
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="slide-text slide_style_right kanit">
+                                    <h1 data-animation="animated fadeInRight">{t('open')}</h1>
+                                    <h2 data-animation="animated fadeInLeft">MoveX</h2>
+                                    <br />
+                                </div>
                             </div>
                         </div>
+                    </div>
 
+                </div>
 
-                        <div class="item active slide_4">
+                <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                    <span class="fa fa-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
 
+                <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
 
-                            <div class="bs-slider-overlay"></div>
-
-                            <div class="container">
-                                <div class="row">
-
-                                    <div class="slide-text slide_style_right kanit">
-                                        <h1 data-animation="animated fadeInRight">Open Now!</h1>
-                                        <h2 data-animation="animated fadeInLeft">MoveX</h2>
-                                        <br />
+            {/* New 4 Section */}
+            <div className="section four-section">
+                <div className="four w-container">
+                    <Fade bottom>
+                        <h3 className="heading-4 four-heading">Four Section</h3>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="four-wrapper upper">
+                            <div className="text-wrapper four">
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddba9c5d31f0f86116d05ee_Group%2073.svg" alt="" className="image-50" />
+                                <div className="icon-text-wrapper">
+                                    <h3 className="heading-4 icon-title tablet home-four">Payment Service</h3>
+                                    <div className="text-block-5 four">
+                                        <strong className="bold-text-2">We provide system that connect to merchant. It can be in a form of hardware and software that connecting to cryptocurrencies and fiat currencies.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="text-wrapper four _2">
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                <div className="icon-text-wrapper">
+                                    <h3 className="heading-4 icon-title tablet home-four">Platform</h3>
+                                    <div className="text-block-5 four">
+                                        <strong className="bold-text-2">We make website and application according to requirement of the customer.</strong>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-                    <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
-                        <span class="fa fa-angle-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-
-                    <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
-                        <span class="fa fa-angle-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="four-wrapper lower">
+                            <div className="text-wrapper four _3">
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                <div className="icon-text-wrapper">
+                                    <h3 className="heading-4 icon-title tablet home-four">Coin implement</h3>
+                                    <div className="text-block-5 four">
+                                        <strong className="bold-text-2">We create coins and provide services that support coin implementation including social media and platform. We take care of every steps till the coin lauched to the public.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="text-wrapper four _4">
+                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
+                                <div className="icon-text-wrapper">
+                                    <h3 className="heading-4 icon-title tablet home-four">Other</h3>
+                                    <div className="text-block-5 four">
+                                        <strong className="bold-text-2">We provide OEM services based on the product that customer request and rebranding as the customer own brand. In the OEM part we do have different kinds of products available.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="vertical-gray-line"></div>
+                    </Fade>
                 </div>
+            </div>
 
-                {/* New 4 Section */}
-                <div className="section four-section">
-                    <div className="four w-container">
-                        <Fade bottom>
-                            <h3 className="heading-4 four-heading">Four Section</h3>
-                        </Fade>
-                        <Fade bottom>
-                            <div className="four-wrapper upper">
-                                <div className="text-wrapper four">
-                                    <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddba9c5d31f0f86116d05ee_Group%2073.svg" alt="" className="image-50" />
-                                    <div className="icon-text-wrapper">
-                                        <h3 className="heading-4 icon-title tablet home-four">Payment Service</h3>
-                                        <div className="text-block-5 four">
-                                            <strong className="bold-text-2">We provide system that connect to merchant. It can be in a form of hardware and software that connecting to cryptocurrencies and fiat currencies.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="text-wrapper four _2">
-                                    <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
-                                    <div className="icon-text-wrapper">
-                                        <h3 className="heading-4 icon-title tablet home-four">Platform</h3>
-                                        <div className="text-block-5 four">
-                                            <strong className="bold-text-2">We make website and application according to requirement of the customer.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        <Fade bottom>
-                            <div className="four-wrapper lower">
-                                <div className="text-wrapper four _3">
-                                    <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
-                                    <div className="icon-text-wrapper">
-                                        <h3 className="heading-4 icon-title tablet home-four">Coin implement</h3>
-                                        <div className="text-block-5 four">
-                                            <strong className="bold-text-2">We create coins and provide services that support coin implementation including social media and platform. We take care of every steps till the coin lauched to the public.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="text-wrapper four _4">
-                                    <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
-                                    <div className="icon-text-wrapper">
-                                        <h3 className="heading-4 icon-title tablet home-four">Other</h3>
-                                        <div className="text-block-5 four">
-                                            <strong className="bold-text-2">We provide OEM services based on the product that customer request and rebranding as the customer own brand. In the OEM part we do have different kinds of products available.</strong>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="vertical-gray-line"></div>
-                        </Fade>
-                    </div>
+            {/*!--------- Section Product ----------!*/}
+            <div className="kiosk-section">
+                <div className="headings-wrapper tabs">
+                    <Fade bottom>
+                        <div className="wrapper-2">
+                            <h6 className="heading-3">Clean Design</h6>
+                            <h3 className="heading-4 home">Crypto Currency ATM</h3>
+                        </div>
+                    </Fade>
                 </div>
-
-                {/*!--------- Section Product ----------!*/}
-                <div className="kiosk-section">
-                    <div className="headings-wrapper tabs">
-                        <Fade bottom>
-                            <div className="wrapper-2">
-                                <h6 className="heading-3">Clean Design</h6>
-                                <h3 className="heading-4 home">Crypto Currency ATM</h3>
-                            </div>
-                        </Fade>
-                    </div>
-                    <div className="kiosk-box">
-                        <Fade left>
-                            <div className="left-image-wrapper">
-                                <img src={BtmLarge} srcSet={`${BtmSmall} 500w,${BtmLarge} 1428w`}
-                                    sizes="100vw" alt />
-                            </div>
-                        </Fade>
-                        <Fade right>
-                            <div className="right-image-wrapper">
-                                <img src={BtmLarge01} srcSet={`${BtmSmall01} 500w,${BtmLarge01} 1428w`}
-                                    sizes="100vw" alt />
-                            </div>
-                        </Fade>
-                    </div>
-                    <div className="container-3 home w-container">
-                        <Fade bottom>
-                            <h3 className="heading-5">
-                                <b>Bitcoin ATM</b> (Automated Teller Machine)&nbsp;
-                                A kiosk that allows a person to purchase Bitcoin through QR Code on the application.
-                                Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
+                <div className="kiosk-box">
+                    <Fade left>
+                        <div className="left-image-wrapper">
+                            <img src={BtmLarge} srcSet={`${BtmSmall} 500w,${BtmLarge} 1428w`}
+                                sizes="100vw" alt />
+                        </div>
+                    </Fade>
+                    <Fade right>
+                        <div className="right-image-wrapper">
+                            <img src={BtmLarge01} srcSet={`${BtmSmall01} 500w,${BtmLarge01} 1428w`}
+                                sizes="100vw" alt />
+                        </div>
+                    </Fade>
+                </div>
+                <div className="container-3 home w-container">
+                    <Fade bottom>
+                        <h3 className="heading-5">
+                            <b>Bitcoin ATM</b> (Automated Teller Machine)&nbsp;
+                            A kiosk that allows a person to purchase Bitcoin through QR Code on the application.
+                            Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
                         </h3>
-                        </Fade>
-                    </div>
+                    </Fade>
                 </div>
-                
-                <div className="black-section">
-                    <div className="black-image-wrapper">
-                        <img
-                            src={Large} srcSet={`${Small} 500w, ${Medium} 800w,${Large} 1801w`}
-                            sizes="100vw" alt="" className="image-13" />
-                    </div>
-                    <div className="black-text-wrapper black">
-                        <Fade bottom>
-                            <div className="headings-wrapper">
-                                <h6 className="heading-3 black">Our Product</h6>
-                                <h3 className="heading-4 black">Smart Watch</h3>
-                            </div>
-                        </Fade>
-                        <Fade right>
-                            <div className="text-block-5 black home">
-                                The innovative for life
-                                Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX
-                                Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
-                        </div>
-                        </Fade>
-                    </div>
-                </div>
+            </div>
 
-                <div className="section card">
-                    <div className="text-wrapper home">
+            <div className="black-section">
+                <div className="black-image-wrapper">
+                    <img
+                        src={Large} srcSet={`${Small} 500w, ${Medium} 800w,${Large} 1801w`}
+                        sizes="100vw" alt="" className="image-13" />
+                </div>
+                <div className="black-text-wrapper black">
+                    <Fade bottom>
                         <div className="headings-wrapper">
-                            <h6 className="heading-3">Our Research</h6>
-                            <h3 className="heading-4">Card</h3>
+                            <h6 className="heading-3 black">Our Product</h6>
+                            <h3 className="heading-4 black">Smart Watch</h3>
                         </div>
-                        <div className="text-block-5 card">Coming Soon</div>
-                    </div>
+                    </Fade>
+                    <Fade right>
+                        <div className="text-block-5 black home">
+                            The innovative for life
+                            Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX
+                            Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
+                        </div>
+                    </Fade>
                 </div>
+            </div>
 
-                {/* <Section1 maxWidth='xl'> */}
-                {/* < section id='about-section' >
+            <div className="section card">
+                <div className="text-wrapper home">
+                    <div className="headings-wrapper">
+                        <h6 className="heading-3">Our Research</h6>
+                        <h3 className="heading-4">Card</h3>
+                    </div>
+                    <div className="text-block-5 card">Coming Soon</div>
+                </div>
+            </div>
+
+            {/* <Section1 maxWidth='xl'> */}
+            {/* < section id='about-section' >
                     <div className='about-box'>
                         <div className='inner-about-box'>
 
@@ -377,49 +368,47 @@ class Home extends Component {
                         </div>
                     </div>
                 </ section > */}
-                {/* </Section1> */}
+            {/* </Section1> */}
 
-                <div className="cryptomap-section">
-                    {/* <div className="image-text-wrapper home">
+            <div className="cryptomap-section">
+                {/* <div className="image-text-wrapper home">
                         Cryptomap
                     </div> */}
 
-                    <div className="section Dark">
+                <div className="section Dark">
 
-                    </div>
-                    <div className="maps-section">
-                        <div className="wrapper-maps col-center">
-                            <div className="cryptomap-maps">
-                                <Map
-                                    googleMapURL={mapURL}
-                                    containerElement={<div className="map-overview" />}
-                                    mapElement={<div style={{ height: '100%' }} />}
-                                    loadingElement={<p>Movex</p>}
-                                />
-                            </div>
+                </div>
+                <div className="maps-section">
+                    <div className="wrapper-maps col-center">
+                        <div className="cryptomap-maps">
+                            <Map
+                                googleMapURL={mapURL}
+                                containerElement={<div className="map-overview" />}
+                                mapElement={<div style={{ height: '100%' }} />}
+                                loadingElement={<p>Movex</p>}
+                            />
                         </div>
                     </div>
                 </div>
+            </div>
 
 
 
-                <div className="partnerships-section">
-                    <div className="content-wrapper home">
-                        <h6 className="heading-2">Partnerships</h6>
-                        <h2 className="h2 partnerships">A Partnerships</h2>
-                        <div className="logo-wrapper">
-                            <h3 className="logo-partner">Logo</h3>
-                            <h3 className="logo-partner">Logo</h3>
-                            <h3 className="logo-partner">Logo</h3>
-                            <h3 className="logo-partner">Logo</h3>
-                        </div>
+            <div className="partnerships-section">
+                <div className="content-wrapper home">
+                    <h6 className="heading-2">Partnerships</h6>
+                    <h2 className="h2 partnerships">A Partnerships</h2>
+                    <div className="logo-wrapper">
+                        <h3 className="logo-partner">Logo</h3>
+                        <h3 className="logo-partner">Logo</h3>
+                        <h3 className="logo-partner">Logo</h3>
+                        <h3 className="logo-partner">Logo</h3>
                     </div>
                 </div>
+            </div>
 
-                <Footer />
-            </div >
-        )
-    }
+            <Footer />
+        </div >
+    )
 }
-
-export default Home;
+export default translate()(Home);
