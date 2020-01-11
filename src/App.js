@@ -2,9 +2,7 @@ import React from 'react';
 import Router from './routes/router'
 import './assets/scss/now-ui-kit.scss';
 
-import { translate } from 'react-i18next'
-
-const App = ({t}) => (
+const App = () => (
   <div id='app'>
   
     <Router />
@@ -12,4 +10,4 @@ const App = ({t}) => (
   </div>
 )
 
-export default translate()(App);
+export default App;

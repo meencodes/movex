@@ -1,12 +1,85 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState, Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
 import { Link as Scroll } from 'react-scroll';
+
 import i18n from 'i18next';
+import { translate } from 'react-i18next';
 
 function handleClick(lang) {
   i18n.changeLanguage(lang);
 }
+
+// const Header = ({ t }) => {
+
+//   useEffect(() => {
+//     const selectElement = (element) => document.querySelector(element);
+
+//     selectElement('.mobile-menu').addEventListener('click', () => {
+//       selectElement('.navbar').classList.toggle('active');
+//     })
+    
+//   });
+
+//   return (
+//     <div className='navbar'>
+//       <div className="container">
+//         <nav className="nav">
+//           <ul className="nav-list nav-list-mobile">
+//             <li className="nav-item">
+//               <Scroll to='main' spy={true} smooth={true} offset={0} duration={1500} className="action">
+//                 <Link to="/" className="nav-link-movex" />
+//               </Scroll>
+//             </li>
+//             <li className="nav-item">
+//               <div className="mobile-menu">
+//                 <span className="line line-top"></span>
+//                 <span className="line line-middle"></span>
+//                 <span className="line line-bottom"></span>
+//               </div>
+//             </li>
+
+//           </ul>
+//           <ul className="nav-list nav-list-larger">
+//             <li className="nav-item nav-item-hidden">
+//               <Scroll to='main' spy={true} smooth={true} offset={0} duration={1500} className="action">
+//                 <Link to="/" className="nav-link nav-link-movex" />
+//               </Scroll>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link to="/atmbitcoin" className="nav-link">{t('header.atm')}</Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link to="/watch" className="nav-link">{t('header.watch')}</Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link to="/card" className="nav-link">{t('header.card')}</Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link to="/cryptomap" className="nav-link">{t('header.cryptomap')}</Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link to="/blockchain" className="nav-link">{t('header.blockchain')}</Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <button onClick={() => handleClick('th')}>
+//                 ภาษาไทย
+//                   </button>
+//               <button onClick={() => handleClick('en')}>
+//                 English
+//                 </button>
+//             </li>
+//           </ul>
+
+//         </nav>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default translate()(Header);
 
 class Header extends Component {
   constructor(props) {
@@ -79,7 +152,7 @@ class Header extends Component {
                 <Link to="/atmbitcoin" className="nav-link">Bitcoin BTM</Link>
               </li>
               <li className="nav-item">
-                <Link to="/watch" className="nav-link">Watch</Link>
+                <Link to="/watch" className="nav-link">Smart Watch</Link>
               </li>
               <li className="nav-item">
                 <Link to="/card" className="nav-link">Card</Link>

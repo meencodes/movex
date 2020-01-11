@@ -175,7 +175,7 @@ const Home = ({ t }) => {
                                 <div className="icon-text-wrapper">
                                     <h3 className="heading-4 icon-title tablet home-four">Payment Service</h3>
                                     <div className="text-block-5 four">
-                                        <strong className="bold-text-2">We provide system that connect to merchant. It can be in a form of hardware and software that connecting to cryptocurrencies and fiat currencies.</strong>
+                                        <strong className="bold-text-2">{t('four.payment')}</strong>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@ const Home = ({ t }) => {
                                 <div className="icon-text-wrapper">
                                     <h3 className="heading-4 icon-title tablet home-four">Platform</h3>
                                     <div className="text-block-5 four">
-                                        <strong className="bold-text-2">We make website and application according to requirement of the customer.</strong>
+                                        <strong className="bold-text-2">{t('four.platform')}</strong>
                                     </div>
                                 </div>
                             </div>
@@ -195,9 +195,9 @@ const Home = ({ t }) => {
                             <div className="text-wrapper four _3">
                                 <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5ddbaa14967a3b1cf83a2bf5_Group%2075.svg" alt="" className="image-50" />
                                 <div className="icon-text-wrapper">
-                                    <h3 className="heading-4 icon-title tablet home-four">Coin implement</h3>
+                                    <h3 className="heading-4 icon-title tablet home-four">Coin implementation</h3>
                                     <div className="text-block-5 four">
-                                        <strong className="bold-text-2">We create coins and provide services that support coin implementation including social media and platform. We take care of every steps till the coin lauched to the public.</strong>
+                                        <strong className="bold-text-2">{t('four.coinimplement')}</strong>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@ const Home = ({ t }) => {
                                 <div className="icon-text-wrapper">
                                     <h3 className="heading-4 icon-title tablet home-four">Other</h3>
                                     <div className="text-block-5 four">
-                                        <strong className="bold-text-2">We provide OEM services based on the product that customer request and rebranding as the customer own brand. In the OEM part we do have different kinds of products available.</strong>
+                                        <strong className="bold-text-2">{t('four.other')}</strong>
                                     </div>
                                 </div>
                             </div>
@@ -243,9 +243,7 @@ const Home = ({ t }) => {
                 <div className="container-3 home w-container">
                     <Fade bottom>
                         <h3 className="heading-5">
-                            <b>Bitcoin ATM</b> (Automated Teller Machine)&nbsp;
-                            A kiosk that allows a person to purchase Bitcoin through QR Code on the application.
-                            Some Bitcoin ATMs offer bi-directional functionality enabling both the purchase of Bitcoin as well as the sale of Bitcoin for cash.
+                            <b>Bitcoin ATM</b> ({t('bitcoin.1')})&nbsp;{t('bitcoin.2')}
                         </h3>
                     </Fade>
                 </div>
@@ -266,9 +264,7 @@ const Home = ({ t }) => {
                     </Fade>
                     <Fade right>
                         <div className="text-block-5 black home">
-                            The innovative for life
-                            Ultimate moves with MoveX the innovative online 4G ledger which provide a unique style of life. Move with passion Move with MoveX
-                            Company ready all the gadgets with the titanium and the diameter of 48 mm. This MoveX watch can easily pair with all sharing gadgets. Multiple device functions are present in this product.
+                            {t('watch')}
                         </div>
                     </Fade>
                 </div>
