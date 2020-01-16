@@ -226,6 +226,274 @@ export class AtmBit extends Component {
                         </div>
                     </div>
                 </div>
+
+                {/* Technical Specification */}
+                <div className="section spec">
+                    <div className="feature-wrapper spec">
+                        <div className="text-wrapper spec _2">
+                            <Fade bottom>
+                                <div className="spec-heading">
+                                    <h6 className="heading-3 left">Crypto Currency ATM</h6>
+                                    <h3 className="heading-4 tech-spec _1 spec">Technical Specification</h3>
+                                </div>
+                            </Fade>
+                        </div>
+                    </div>
+                </div>
+                <div className="section spec-features-section">
+                    <div className="spec-container">
+                        <div className="add-columns-wrapper">
+                            {/* row 1*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Power consumption</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">
+                                            20W (10W in idle state)
+                                    </strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 2*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Power input</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">
+                                            AC 100-240V (Japan, US, Australia, Europe, Asia and other)
+                                    </strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 3*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Internet connectivity</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">
+                                            WiFi (b/g/n) + Ethernet 100Mbit
+                                    </strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 4*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Currencies supported</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">
+                                            More than 120 (including USD, EUR..)
+                                    </strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 5*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Crypto address entry</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">QR code scanner or e-mail address or cell phone number</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 6*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Warranty</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">1 year</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 7*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Languages</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">Chinese (ZH), Croatian (HR), Czech (CS), Dutch (NL), English (EN), French (FR), Georgian (KA), German (DE), Hungarian (HU), Italian (IT), Japanese (JA), Kazakh (KK), Korean (KO), Latvian (LV), Lithuanian (LT), Norwegian (NO), Polish (PL), Romanian (RO), Russian (RU), Serbian (SR), Slovenian (SL), Slovakian (SK), Spanish (ES), Swiss German (DE-CH), Ukrainian (UK), Vietnamese (VN) or translate into any other language yourself</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 8*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Dimensions</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">BATMTwo Classic: 32x38x27 cm / 12.6x16x10.6 inch. BATMTwo Large: 32x38x38 cm / 12.6x16x16 inch.</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 9*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Material</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">2mm iron</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 10*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Display</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">7” capacitive</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 11*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Mounting options</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">Designed to be mounted on a wall (mounting screws and tools are included) or free-standing using the optional BATMTwo Stand. For BATMTwo Large we highly recommend using BATMTwo Stand.</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 12*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Cash box capacity</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">BATMTwo Classic: 600 banknotes, BATMTwo Large: 1200 banknotes</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 13*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Security</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">Two high security standard locks. One for main door, second for cashbox.</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 14*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">CE Conformity</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">European Directives: 206/95/EC, 2004/108/EC</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 15*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Standards</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">EN 60335-1:12, EN 60335-2-82:03+A1:08, EN 55022:10, EN 55024:10, EN 61000-3-2:06+A1:09+A2:09, EN 61000-3-3:08</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* row 16*/}
+                            <div className="row">
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <Fade bottom>
+                                        <h3 className="heading-4 icon-title tablet cryptocurrency cryptocurrency-icon-wrapper-title">Weight</h3>
+                                    </Fade>
+                                </div>
+
+                                <div className="icon-text-wrapper cryptocurrency">
+                                    <div className="text-block-5 features cryptocurrency">
+                                        <strong className="bold-text-3">BATMTwo Classic: 23kg / 50lbs. BATMTwo Large: 28kg / 61lbs. BATMTwo Stand: 33kg / 73lbs. Optionally add your own additional weights in the BATMTwo Stand base.</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 <Footer />
             </div>
         )
