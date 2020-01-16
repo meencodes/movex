@@ -1,6 +1,6 @@
 import React from 'react';
 import Router from './routes/router'
-import './assets/scss/now-ui-kit.scss';
+import './assets/scss/main.scss';
 
 const App = () => (
   <div id='app'>
