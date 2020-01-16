@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import Fade from 'react-reveal/Fade';
+import VBticoin from '../assets/video/bitcoin_use.mp4'
+import Vbitcoin from '../assets/video/bitcoin_use.webm'
 
 export class AtmBit extends Component {
     render() {
@@ -32,6 +34,22 @@ export class AtmBit extends Component {
                         </div>
                     </div>
                 </div>
+
+                {/* video */}
+                <div className="video-section atmbitcoin mobile">
+                    <div data-poster-url="" data-video-urls={`${VBticoin}, ${Vbitcoin}`} data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom">
+                        <video autoPlay loop muted playsInline>
+                            <source src={VBticoin} data-wf-ignore="true" />
+                            <source src={Vbitcoin} data-wf-ignore="true" />
+                        </video>
+                        <div className="t-wrapper">
+                            <h6 class="heading">Head</h6>
+                            <h3 class="h2">Text</h3>
+                        </div>
+                    </div>
+                    <div className="video-overlay"></div>
+                </div>
+
                 <div className="section cryptocurrency">
                     <div className="feature-wrapper cryptocurrency">
                         <div className="text-feature-wrapper cryptocurrency">

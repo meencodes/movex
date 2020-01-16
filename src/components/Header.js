@@ -6,10 +6,6 @@ import { Link as Scroll } from 'react-scroll';
 import i18n from 'i18next';
 import { translate } from 'react-i18next';
 
-function handleClick(lang) {
-  i18n.changeLanguage(lang);
-}
-
 // const Header = ({ t }) => {
 
 //   useEffect(() => {
@@ -162,15 +158,6 @@ class Header extends Component {
               </li>
               <li className="nav-item">
                 <Link to="/blockchain" className="nav-link">Blockchain</Link>
-              </li>
-
-              <li className="nav-item">
-                <button onClick={() => handleClick('th')}>
-                  ภาษาไทย
-                  </button>
-                <button onClick={() => handleClick('en')}>
-                  English
-                </button>
               </li>
             </ul>
 

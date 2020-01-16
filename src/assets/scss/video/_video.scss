@@ -1,0 +1,97 @@
+.video-section {
+    position: relative;
+}
+.video-section.atmbitcoin {
+    margin-bottom: 100px;
+}
+.w-background-video {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    color: white;
+}
+
+.background-video {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 600px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.w-background-video>video {
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    bottom: -100%;
+    top: -100%;
+    left: -100%;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.heading {
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.t-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 130px;
+    padding-left: 130px;
+}
+
+.video-overlay {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(31, 27, 21, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+    .heading {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .h2 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .video-section.atmbitcoin.mobile {
+        width: auto;
+        margin-bottom: 0px;
+    }
+    .background-video {
+        width: 100%;
+        height: 400px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .heading {
+        margin-bottom: 0px;
+    }
+    .h2 {
+        margin-top: 13px;
+    }
+}

@@ -392,8 +392,8 @@ const Home = ({ t }) => {
 
             <div className="partnerships-section">
                 <div className="content-wrapper home">
-                    <h6 className="heading-2">Partnerships</h6>
-                    <h2 className="h2 partnerships">A Partnerships</h2>
+                    <h6 className="heading-2">A Partnerships</h6>
+                    <h2 className="h2 partnerships">{t('partnership')}</h2>
                     <div className="logo-wrapper">
                         <h3 className="logo-partner">Logo</h3>
                         <h3 className="logo-partner">Logo</h3>

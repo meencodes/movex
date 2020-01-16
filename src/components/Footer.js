@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import '../style.css'
 import logo from '../assets/images/logo/LogoMoveX-BBG-01.svg'
+import i18n from 'i18next';
+
+function handleClick(lang) {
+    i18n.changeLanguage(lang);
+  }
 
 class Footer extends Component {
     render() {
@@ -58,8 +63,9 @@ class Footer extends Component {
                         <h4 className="heading-8 footer">© 2019 MOVEX</h4>
                     </div>
                 </div>
+                <button onClick={() => handleClick('en')}>English</button>
+                <button onClick={() => handleClick('th')}>ภาษาไทย</button>
             </div>
-
         )
     }
 }
