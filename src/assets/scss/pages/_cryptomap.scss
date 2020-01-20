@@ -375,3 +375,350 @@
 
 
 //App Download
+.t-wrapper.app {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: visible;
+    margin-bottom: 160px;
+    padding-top: 70px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.t-wrapper.app.download {
+    padding-right: 150px;
+    padding-left: 150px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.headings-image-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.download-headings-wrapper {
+    width: 60%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+.upper-headings {
+    position: relative;
+    z-index: 1;
+}
+.heading-2.app {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.h2.convenience {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #1b1b1b;
+    line-height: 45px;
+    letter-spacing: 0.12em;
+}
+.h2.convenience.app {
+    margin-top: 13px;
+    font-size: 36px;
+    // line-height: 34px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0.08em;
+    max-width: 350px;
+}
+.h3 {
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #1b1b1b;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+.h3.app {
+    max-width: 450px;
+    padding-top: 15px;
+    color: #949494;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: left;
+}
+
+//Logo
+.phone-logos-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translate(0px, -140px);
+    -ms-transform: translate(0px, -140px);
+    transform: translate(0px, -140px);
+}
+.phone-logos-wrapper.app {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.link-block-3 {
+    cursor: pointer;
+}
+
+.image-9 {
+    margin-right: 30px;
+}
+.image-9.app {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+//
+.convenience-image-wrapper {
+    overflow: visible;
+    width: 50%;
+    height: auto;
+}
+.image-10 {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 30px;
+    -webkit-transform: translate(0px, 30px) scale(1.45);
+    -ms-transform: translate(0px, 30px) scale(1.45);
+    transform: translate(0px, 30px) scale(1.45);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 991px) {
+    .t-wrapper.app {
+        padding-top: 0px;
+        padding-right: 30px;
+        padding-left: 30px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .t-wrapper.app.download {
+        margin-bottom: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .headings-image-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .download-headings-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding-left: 0px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    .upper-headings {
+        padding-left: 0px;
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+    .h3 {
+        margin-bottom: 0px;
+    }
+    .h3.app {
+        margin-bottom: 40px;
+    }
+
+
+    .convenience-image-wrapper {
+        position: static;
+        margin-top: 0px;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+    .image-10 {
+        margin-left: 0px;
+        -webkit-transform: scale(1.8);
+        -ms-transform: scale(1.8);
+        transform: scale(1.8);
+    }
+
+    //logo
+    .phone-logos-wrapper {
+        -webkit-transform: translate(0px, -120px);
+        -ms-transform: translate(0px, -120px);
+        transform: translate(0px, -120px);
+    }
+    .phone-logos-wrapper.app {
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .download-headings-wrapper {
+        width: 100%;
+    }
+    .h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .h2.convenience.app {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .h3 {
+        margin-bottom: 0px;
+    }
+    .h3.app {
+        font-size: 18px;
+    }
+
+    .convenience-image-wrapper {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .t-wrapper.app.download {
+        margin-bottom: 0px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .download-headings-wrapper {
+        padding-left: 0px;
+    }
+    .heading-2.app {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .h2 {
+        margin-top: 13px;
+    }
+    .h2.convenience {
+        font-size: 28px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+    .h2.convenience.app {
+        margin-bottom: 0px;
+        // line-height: 22px;
+    }
+    .h3 {
+        margin-bottom: 0px;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 300;
+    }
+    .h3.app {
+        margin-bottom: 0px;
+        padding-top: 10px;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .convenience-image-wrapper {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 0px;
+        padding-bottom: 40px;
+    }
+    .image-10 {
+        width: 100%;
+        -webkit-transform: scale3d(1none, 1none, 1none);
+        transform: scale3d(1none, 1none, 1none);
+    }
+
+    .phone-logos-wrapper {
+        -webkit-transform: translate(0px, 40px);
+        -ms-transform: translate(0px, 40px);
+        transform: translate(0px, 40px);
+    }
+
+    .phone-logos-wrapper.app {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 0px;
+        -webkit-transform: translate(0px, 50px);
+        -ms-transform: translate(0px, 50px);
+        transform: translate(0px, 50px);
+    }
+
+    .image-9 {
+        margin-right: 15px;
+    }
+    .image-9.app {
+        max-width: 80%;
+        margin-right: 15px;
+    }
+    .image-41 {
+        max-width: 100%;
+    }
+}

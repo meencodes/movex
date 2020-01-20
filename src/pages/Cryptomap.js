@@ -3,7 +3,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import Tick from '../assets/images/cryptomap/Tick.svg';
+import AppStore from '../assets/images/cryptomap/AppStore.svg'
+import AppleStore from '../assets/images/cryptomap/AppleStore.svg'
 import Fade from 'react-reveal/Fade';
+
+import Large from '../assets/images/cryptomap/MockUp-Large.png';
+import Medium from '../assets/images/cryptomap/MockUp-Medium.png';
+import Small from '../assets/images/cryptomap/MockUp-Small.png';
 
 export class Cryptomap extends Component {
     render() {
@@ -54,6 +60,29 @@ export class Cryptomap extends Component {
                                 </div>
                             </Fade>
                         </div>
+                    </div>
+                </div>
+
+                <div className="t-wrapper app download">
+                    <div className="headings-image-wrapper">
+                        <div className="download-headings-wrapper">
+                            <div className="upper-headings">
+                                <h6 className="heading-2 app">Now Available</h6>
+                                <h2 className="h2 convenience app">DOWNLOAD CRYPTOMAP APP</h2>
+                                <h3 className="h3 app">Cryptomap app is available for Android and iOS. Click on the link below to download the app through the Google Play Store or the App Store.</h3>
+                            </div>
+                        </div>
+                        <div className="convenience-image-wrapper">
+                            <img src="https://uploads-ssl.webflow.com/5db82a0cfce78613669ce21c/5db873c767b28f16d291418e_MockUp2%201.png" alt="solus phone image" srcSet={`${Small} 500w, ${Medium} 800w, ${Large} 1059w`} sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 85vw, 47vw" className="image-10" />
+                        </div>
+                    </div>
+                    <div className="phone-logos-wrapper app">
+                        <a href="https://play.google.com/store/apps/details?id=com.application.cryptomap&hl=th" rel="noopener noreferrer" target="_blank" className="w-inline-block">
+                            <img src={AppStore} alt="" className="image-9 app" />
+                        </a>
+                        <a href="https://apps.apple.com/th/app/cryptomap/id1493994965?l=th" rel="noopener noreferrer" target="_blank" className="link-block-3 w-inline-block">
+                            <img src={AppleStore} alt="" className="image-41" />
+                        </a>
                     </div>
                 </div>
                 <Footer />
