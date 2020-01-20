@@ -34,7 +34,7 @@ import { translate } from 'react-i18next'
 // import { Link } from 'react-router-dom';
 // import { Link as Scroll } from 'react-scroll';
 
-const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD6aGyzvfGlncrrGbEe1M5OwKbOuSGpegk`;
+const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCtK_Xwc4oyzG8dpLKAIf2tTq06OJCFDtI`;
 const Home = ({ t }) => {
     return (
         <div id='main'>

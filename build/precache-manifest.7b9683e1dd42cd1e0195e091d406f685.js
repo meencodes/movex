@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89224e976ec2d34e41dcac9bdf05c0f5",
+    "revision": "d9525840c5d85b23c9a2b52036d5f2e2",
     "url": "/index.html"
   },
   {
-    "revision": "98c377d20a1bf3a32c87",
-    "url": "/static/css/main.d7503b95.chunk.css"
+    "revision": "f9d80a883129b0e01468",
+    "url": "/static/css/main.f619586f.chunk.css"
   },
   {
-    "revision": "5e55a0d732269a4257ce",
-    "url": "/static/js/2.9e02f6ac.chunk.js"
+    "revision": "ddd256b870287124e4ae",
+    "url": "/static/js/2.91c6496b.chunk.js"
   },
   {
-    "revision": "98c377d20a1bf3a32c87",
-    "url": "/static/js/main.85bb4c60.chunk.js"
+    "revision": "f9d80a883129b0e01468",
+    "url": "/static/js/main.09b2255c.chunk.js"
   },
   {
     "revision": "f163b3bf3a8085d5b99c",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "de79123e409082b6222dc965c2d97618",
     "url": "/static/media/LogoMoveX-BBG-01.de79123e.svg"
+  },
+  {
+    "revision": "f6eb2e15bc78a89fbd658dee2ab5e3a7",
+    "url": "/static/media/Tick.f6eb2e15.svg"
   },
   {
     "revision": "2d3f36357a6e417afa602e9b74145d89",
@@ -46,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f08a4f0882dafc679fe43c523505d644",
     "url": "/static/media/cryptomaplogo.f08a4f08.png"
+  },
+  {
+    "revision": "515035cf30a9632c25d82526b495a850",
+    "url": "/static/media/hero-cryptomap.515035cf.png"
   },
   {
     "revision": "4cdde1b2ad9aa9acd8ec65f085c4a828",

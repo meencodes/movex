@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7503b95.chunk.css",
-    "main.js": "/static/js/main.85bb4c60.chunk.js",
-    "main.js.map": "/static/js/main.85bb4c60.chunk.js.map",
+    "main.css": "/static/css/main.f619586f.chunk.css",
+    "main.js": "/static/js/main.09b2255c.chunk.js",
+    "main.js.map": "/static/js/main.09b2255c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6d78c37f.js",
     "runtime-main.js.map": "/static/js/runtime-main.6d78c37f.js.map",
-    "static/js/2.9e02f6ac.chunk.js": "/static/js/2.9e02f6ac.chunk.js",
-    "static/js/2.9e02f6ac.chunk.js.map": "/static/js/2.9e02f6ac.chunk.js.map",
+    "static/js/2.91c6496b.chunk.js": "/static/js/2.91c6496b.chunk.js",
+    "static/js/2.91c6496b.chunk.js.map": "/static/js/2.91c6496b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cf351e8a8ca8bb2c3694675d5b3bd972.js": "/precache-manifest.cf351e8a8ca8bb2c3694675d5b3bd972.js",
+    "precache-manifest.7b9683e1dd42cd1e0195e091d406f685.js": "/precache-manifest.7b9683e1dd42cd1e0195e091d406f685.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d7503b95.chunk.css.map": "/static/css/main.d7503b95.chunk.css.map",
+    "static/css/main.f619586f.chunk.css.map": "/static/css/main.f619586f.chunk.css.map",
     "static/media/style.css": "/static/media/20191119_191128_0005.59fae2bf.jpg",
     "static/media/LogoMoveX-BBG-01.svg": "/static/media/LogoMoveX-BBG-01.de79123e.svg",
+    "static/media/Tick.svg": "/static/media/Tick.f6eb2e15.svg",
     "static/media/bootstrap-touch-slider.css": "/static/media/architectural-design-architecture-buildings-city-374811.2d3f3635.jpg",
     "static/media/bitcoin_use.mp4": "/static/media/bitcoin_use.6fda818c.mp4",
     "static/media/bitcoin_use.webm": "/static/media/bitcoin_use.a56ae1af.webm",
     "static/media/App.css": "/static/media/watch_large_small.df39a0e0.jpg",
     "static/media/cryptomaplogo.png": "/static/media/cryptomaplogo.f08a4f08.png",
+    "static/media/main.scss": "/static/media/hero-cryptomap.515035cf.png",
     "static/media/large-kiosk-01.png": "/static/media/large-kiosk-01.3b7d3613.png",
     "static/media/large-kiosk.png": "/static/media/large-kiosk.1a29c37b.png",
     "static/media/small-kiosk-01.png": "/static/media/small-kiosk-01.0c0ab138.png",
@@ -28,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6d78c37f.js",
-    "static/js/2.9e02f6ac.chunk.js",
-    "static/css/main.d7503b95.chunk.css",
-    "static/js/main.85bb4c60.chunk.js"
+    "static/js/2.91c6496b.chunk.js",
+    "static/css/main.f619586f.chunk.css",
+    "static/js/main.09b2255c.chunk.js"
   ]
 }
