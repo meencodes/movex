@@ -12,7 +12,9 @@
 .cryptocurrency-hero-wrapper {
     margin-top: 70px;
 }
-
+.cryptocurrency-hero-section.white {
+    background-color: #fff;
+}
 .cryptocurrency-hero-content-wrapper {
     position: static;
     display: -webkit-box;
@@ -75,6 +77,9 @@ h4 {
 }
 .little-heading.white {
     color: #fff;
+    text-transform: uppercase;
+}
+.little-heading.black {
     text-transform: uppercase;
 }
 .little-heading.white.cryptocurrency {
