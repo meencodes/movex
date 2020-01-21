@@ -3,9 +3,9 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 //Watch
-import Small from '../assets/images/watch/watch_small.png';
-import Medium from '../assets/images/watch/watch_medium.png';
-import Large from '../assets/images/watch/watch_large.png';
+import Small from '../assets/images/watch/Small-Watch.png';
+import Medium from '../assets/images/watch/Medium-Watch.png';
+import Large from '../assets/images/watch/Large-Watch.png';
 
 //BTM
 import BtmLarge from '../assets/images/btm/large-kiosk.png';
@@ -27,7 +27,7 @@ import '../App.css';
 import '../bootstrap-touch-slider.css';
 import $ from 'jquery';
 
-import Fade from 'react-reveal/Fade';
+import { Fade, Bounce } from 'react-reveal';
 
 import { translate } from 'react-i18next'
 
@@ -141,7 +141,9 @@ const Home = ({ t }) => {
                             <div class="row">
 
                                 <div class="slide-text slide_style_right kanit">
+                                    <Bounce>
                                     <h1 data-animation="animated fadeInRight">{t('open')}</h1>
+                                    </Bounce>
                                     <h2 data-animation="animated fadeInLeft">MoveX</h2>
                                     <br />
                                 </div>
@@ -227,13 +229,13 @@ const Home = ({ t }) => {
                     </Fade>
                 </div>
                 <div className="kiosk-box">
-                    <Fade left>
+                    <Fade bottom>
                         <div className="left-image-wrapper">
                             <img src={BtmLarge} srcSet={`${BtmSmall} 500w,${BtmLarge} 1428w`}
                                 sizes="100vw" alt />
                         </div>
                     </Fade>
-                    <Fade right>
+                    <Fade bottom>
                         <div className="right-image-wrapper">
                             <img src={BtmLarge01} srcSet={`${BtmSmall01} 500w,${BtmLarge01} 1428w`}
                                 sizes="100vw" alt />

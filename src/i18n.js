@@ -10,7 +10,7 @@ const options = {
 	// keys or params to lookup language from
 	lookupQuerystring: 'lng',
 	lookupCookie: 'i18next',
-	lookupLocalStorage: 'i18nextLng',
+	lookupLocalStorage: 'Lang',
 	lookupFromPathIndex: 0,
 	lookupFromSubdomainIndex: 0,
 
