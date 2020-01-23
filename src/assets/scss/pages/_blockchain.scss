@@ -1,0 +1,121 @@
+$text: #fff;
+$link: #e34234;
+$link-hover: #ba160c;
+$background: rgba(0,0,0,0.8);
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+  
+.particles-js {
+    padding-top: 70px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.blockchain-section {
+	padding-top: 200px;
+	position: relative;
+	height: 100vh;
+	// background: $background;
+	background: url(./finastra_insights-1024x512.png) center no-repeat;
+	background-size: cover !important;
+	background-attachment: fixed;
+}
+.blockchain-second {
+	position: relative;
+	height: 100vh;
+}
+
+.text-wrapper-blockchain {
+	position: relative;
+	z-index: 10;
+	
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-bottom: 160px;
+    margin-left: auto;
+    padding-top: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.text-wrapper-blockchain.home {
+	margin-bottom: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.white {
+	color: #fff;
+}
+
+.h3.home {
+	max-width: 650px;
+	margin-bottom: 50px;
+	color: #fff;
+}
+.h2.convenience.white {
+	color: #fff;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+	.text-wrapper-blockchain {
+		height: 100vh;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.text-wrapper-blockchain.home {
+		margin-bottom: 50px;
+	}
+	.h3.home {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.text-wrapper-blockchain {
+		margin-bottom: 70px;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.text-wrapper-blockchain.home {
+		overflow: hidden;
+	}
+	.h3.home {
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.text-wrapper-blockchain {
+		margin-bottom: 50px;
+		padding-top: 0;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.text-wrapper-blockchain.home {
+		overflow: hidden;
+		height: auto;
+		margin-bottom: 50px;
+	}
+}

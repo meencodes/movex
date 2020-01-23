@@ -8,7 +8,7 @@ const options = {
 	order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
 
 	// keys or params to lookup language from
-	lookupQuerystring: 'lng',
+	lookupQuerystring: 'lang',
 	lookupCookie: 'i18next',
 	lookupLocalStorage: 'Lang',
 	lookupFromPathIndex: 0,
