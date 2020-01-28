@@ -76,7 +76,7 @@ a:hover {
   transition: all 0.2s ease-out;
   background: rgba(0,0,0,0.8);
   backdrop-filter: blur(2rem);
-  padding: 1.8vh 22vw;
+  padding: 1.8vh 11vw;
 }
 
 .scrolled {

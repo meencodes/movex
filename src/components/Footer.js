@@ -1,73 +1,100 @@
 import React, { Component } from 'react';
-import '../style.css'
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/LogoMoveX-BBG-01.svg'
-import i18n from 'i18next';
 
-function handleClick(lang) {
-    i18n.changeLanguage(lang);
-  }
-
-class Footer extends Component {
+class FooterN extends Component {
     render() {
         return (
+            <footer className="global-footer">
+                <div className="footer-content">
+                    <section></section>
+                    <nav className="footer-directory">
 
-            <div className="footer contact">
-                <div className="footer-columns w-container">
-                    <div className="footer-columns-header"><img src={logo} alt="movex white logo" /></div>
-                    <div className="footer-links">
-                        <div className="first-line">
-                            <div className="footer-links-item _1">
-                                <h3 className="footer-list-item"><a href="#ss" className="footer-link w--current">Overview</a></h3>
-                                <ul className="footer-list">
-                                    <li className="footer-list-item"><a href="#ss" className="footer-link">BTM Kiosk</a></li>
-                                    <li className="footer-list-item"><a href="444" className="footer-link">Watch</a></li>
-                                    <li className="footer-list-item"><a href="444" className="footer-link">Card</a></li>
-                                    <li className="footer-list-item"><a href="444" className="footer-link">Cryptomap</a></li>
-
-                                </ul>
-                            </div>
-                            <div className="footer-links-item">
-                                <h3 className="footer-list-item mobile-invisible"><a href="#hhh" className="footer-link">FAQ</a></h3>
-                                <ul className="footer-list">
-                                    <li className="footer-list-item"><a href="#hhh"></a></li>
-                                </ul>
-                            </div>
-                            <div className="footer-links-item">
-                                <h3 className="footer-list-item"><a href="#sss" className="footer-link">Contact us</a></h3>
-                                <ul className="footer-list">
-                                    <li className="footer-list-item"><a href="#sss"></a></li>
+                        {/* Content MoveX */}
+                        <div className="ft-directory-column">
+                            <input className="ft-directory-column-section-state" type="checkbox" id="ft-directory-column-section-state-products" />
+                            <div className="ft-directory-column-section">
+                                <label className="ft-directory-column-section-label" for="ft-directory-column-section-state-products">
+                                    <h3 className="ft-directory-column-section-title">เว็บไซต์ของเรา</h3>
+                                </label>
+                                {/* <a href="#ft-directory-column-section-state-products" className="ft-directory-column-section-anchor ft-directory-column-section-anchor-open">
+                                    <span className="ft-directory-column-section-anchor-label">เปิดเมนู</span>
+                                </a>
+                                <a href="#" className="ft-directory-column-section-anchor ft-directory-column-section-anchor-close">
+                                    <span className="ft-directory-column-section-anchor-label">ปิดเมนู</span>
+                                </a> */}
+                                <ul className="ft-directory-column-section-list">
+                                    <li className="ft-directory-column-section-item">
+                                        <Link to="/atmbitcoin" className="ft-directory-column-section-link">Kiosk ATM</Link>
+                                    </li>
+                                    <li className="ft-directory-column-section-item">
+                                        <Link to="/watch" className="ft-directory-column-section-link">Smarth Watch</Link>
+                                    </li>
+                                    <li className="ft-directory-column-section-item">
+                                        <Link to="/card" className="ft-directory-column-section-link">Card</Link>
+                                    </li>
+                                    <li className="ft-directory-column-section-item">
+                                        <Link to="/cryptomap" className="ft-directory-column-section-link">Cryptomap</Link>
+                                    </li>
+                                    <li className="ft-directory-column-section-item">
+                                        <Link to="/blockchain" className="ft-directory-column-section-link">Blockchain</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="footer-links-item bigger">
-                            <h3 className="footer-heading">Join our newsletter</h3>
-                        </div>
-                        <div className="footer-links-item">
-                            <h3 className="footer-heading">Follow us</h3>
-                            <div className="social-logos-wrapper foot">
-                                <a href="https://www.facebook.com/Koleda.Co/" target="_blank" className="w-inline-block" />
-                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5db94bb62067faede0895613_Facebook.svg" alt="facebook icon" width="10" className="image-15" />
-                                <a href="https://www.instagram.com/koleda.co/" target="_blank" className="w-inline-block" />
-                                <img src="https://assets.website-files.com/5db82a0cfce78613669ce21c/5db94bb673588376c1dce171_Instagram.svg" alt="instagram icon" className="image-17" />
+
+                        <div className="ft-directory-column">
+                            <div className="ft-directory-column-section">
+                                <label className="ft-directory-column-section-label">
+                                    <h3 className="ft-directory-column-section-title">บริการของเรา</h3>
+                                </label>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="white-orange-headings-wrapper">
-                        <h3 className="heading-6">MoveX for business?</h3>
-                        <h3 className="heading-7">
-                            <a href="mailto:max.interbrick@movex.co" className="link-4">Learn more</a>
-                        </h3>
-                    </div>
-                    <div className="last-title-headings">
-                        <h4 className="heading-8 footer">© 2019 MOVEX</h4>
-                    </div>
+                        <div className="ft-directory-column">
+                            <div className="ft-directory-column-section">
+                                <label className="ft-directory-column-section-label">
+                                    <h3 className="ft-directory-column-section-title">สำหรับธุรกิจ</h3>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className="ft-directory-column">
+                            <input className="ft-directory-column-section-state" type="checkbox" id="ft-directory-column-section-state-about" />
+                            <div className="ft-directory-column-section">
+                                <label className="ft-directory-column-section-label" for="ft-directory-column-section-state-about">
+                                    <h3 className="ft-directory-column-section-title">เกี่ยวกับ MoveX</h3>
+                                </label>
+                                <ul className="ft-directory-column-section-list">
+                                    <li className="ft-directory-column-section-item">
+                                        <Link to="/" className="ft-directory-column-section-link">กิจกรรม</Link>
+                                    </li>
+                                    <li className="ft-directory-column-section-item">
+                                        <Link to="/" className="ft-directory-column-section-link">ติดต่อเรา</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </nav>
+                    <section className="ft-footer">
+                        <div className="ft-footer-shop">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div className="footer-legal">
+                            <div className="footer-legal-copyright">Copyright © 2020 MoveX Co.,Ltd. สงวนสิทธิ์ทุกประการ</div>
+                            <div className="footer-legal-links">
+                                <Link to="/" className="footer-legal-link">นโยบาบความเป็นส่วนตัว</Link>
+                                <Link to="/" className="footer-legal-link">ข้อกำหนดการใช้งาน</Link>
+                                <Link to="/" className="footer-legal-link">ข้อมูลทางกฎหมาย</Link>
+                                <Link to="/" className="footer-legal-link">แผนผังเว็บไซต์</Link>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <button onClick={() => handleClick('en')}>English</button>
-                <button onClick={() => handleClick('th')}>ภาษาไทย</button>
-            </div>
+            </footer>
         )
     }
 }
 
-export default Footer;
+export default FooterN;

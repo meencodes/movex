@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -24,6 +24,7 @@ import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 
 import '../App.css';
+import '../style.css';
 import '../bootstrap-touch-slider.css';
 import $ from 'jquery';
 
@@ -38,7 +39,7 @@ const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCtK_Xw
 const Home = ({ t }) => {
     return (
         <div id='main'>
-
+            
             <Header />
 
             <div id="bootstrap-touch-slider" className="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
@@ -245,7 +246,7 @@ const Home = ({ t }) => {
                 <div className="container-3 home w-container">
                     <Fade bottom>
                         <h3 className="heading-5">
-                            <b>Bitcoin ATM</b> ({t('bitcoin.1')})&nbsp;{t('bitcoin.2')}
+                            Bitcoin ATM ({t('bitcoin.1')})&nbsp;{t('bitcoin.2')}
                         </h3>
                     </Fade>
                 </div>
@@ -404,7 +405,7 @@ const Home = ({ t }) => {
                     </div>
                 </div>
             </div>
-
+            
             <Footer />
         </div >
     )

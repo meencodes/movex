@@ -5,7 +5,9 @@
 @import './now-ui-kit/section';
 
 //compoents
-@import './layout/footer';
+@import './layout/footer',
+        './layout/header',
+        './layout/menu';
 
 //section
 @import './now-ui-kit/partnership';
