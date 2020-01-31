@@ -1,3 +1,6 @@
+.partnerships-section {
+    width: 100%;
+}
 .content-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -30,6 +33,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     max-width: 100em;
     margin-right: auto;
     margin-left: auto;
@@ -74,3 +78,98 @@
     line-height: 45px;
     letter-spacing: 0.08em;
 }
+
+//////////////grid///////////////////////
+.col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+//////////// Logo /////////////////
+.image-4 {
+    width: 140px;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    // filter: grayscale(100%);
+    cursor: pointer;
+    max-width: none;
+    transition: transform 0.3s;
+}
+
+.image-4:hover {
+    // -ms-transform: scale(1.1);
+    // -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    // filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .partnerships-section {
+        max-width: 1140px;
+    }
+    .image-4 {
+        width: 140px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .partnerships-section {
+        max-width: 960px;
+    }
+    .logo-wrapper {
+        max-width: 100vw;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .partnerships-section {
+        max-width: 720px;
+    }
+    .logo-wrapper {
+        max-width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .image-4 {
+        width: 90px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .partnerships-section {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .image-4 {
+        width: 70px;
+        margin-top: 30px;
+    }
+}
+

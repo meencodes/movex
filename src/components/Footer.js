@@ -7,7 +7,7 @@ class FooterN extends Component {
         return (
             <footer className="global-footer">
                 <div className="footer-content">
-                    <section></section>
+                    <section className="footer-info"><img src={logo}/></section>
                     <nav className="footer-directory">
 
                         {/* Content MoveX */}
@@ -25,7 +25,7 @@ class FooterN extends Component {
                                 </a> */}
                                 <ul className="ft-directory-column-section-list">
                                     <li className="ft-directory-column-section-item">
-                                        <Link to="/atmbitcoin" className="ft-directory-column-section-link">Kiosk ATM</Link>
+                                        <Link to="/atmbitcoin" className="ft-directory-column-section-link">Bitcoin ATM</Link>
                                     </li>
                                     <li className="ft-directory-column-section-item">
                                         <Link to="/watch" className="ft-directory-column-section-link">Smarth Watch</Link>

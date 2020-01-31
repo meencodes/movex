@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 //Watch
 import Small from '../assets/images/watch/Small-Watch.png';
@@ -17,6 +18,12 @@ import BtmSmall01 from '../assets/images/btm/small-kiosk-01.png'
 import Map from '../components/Map';
 import { Typography, Container } from '@material-ui/core'
 
+//logo parthnership
+import Coolbit from '../assets/images/logo/partnerships/coolbitx_logo.png';
+import StreamHash from '../assets/images/logo/partnerships/365stream_logo.png';
+import Cryptomap from '../assets/images/logo/partnerships/cryptomap_logo.png';
+import Hashbx from '../assets/images/logo/partnerships/hashbx_logo.png';
+import Voltz from '../assets/images/logo/partnerships/voltz_logo.png'
 
 import TrendingUpIcon from '@material-ui/icons/TrendingUpRounded';
 import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRounded';
@@ -29,7 +36,6 @@ import '../bootstrap-touch-slider.css';
 import $ from 'jquery';
 
 import { Fade, Bounce } from 'react-reveal';
-
 import { translate } from 'react-i18next'
 
 // import { Link } from 'react-router-dom';
@@ -39,7 +45,7 @@ const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCtK_Xw
 const Home = ({ t }) => {
     return (
         <div id='main'>
-            
+
             <Header />
 
             <div id="bootstrap-touch-slider" className="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
@@ -143,7 +149,7 @@ const Home = ({ t }) => {
 
                                 <div class="slide-text slide_style_right kanit">
                                     <Bounce>
-                                    <h1 data-animation="animated fadeInRight">{t('open')}</h1>
+                                        <h1 data-animation="animated fadeInRight">{t('open')}</h1>
                                     </Bounce>
                                     <h2 data-animation="animated fadeInLeft">MoveX</h2>
                                     <br />
@@ -391,21 +397,43 @@ const Home = ({ t }) => {
                 </div>
             </div>
 
-
-
             <div className="partnerships-section">
                 <div className="content-wrapper home">
                     <h6 className="heading-2">A Partnerships</h6>
                     <h2 className="h2 partnerships">{t('partnership')}</h2>
+                    <div className="row-wrapper">
+
+                    </div>
                     <div className="logo-wrapper">
-                        <h3 className="logo-partner">Logo</h3>
-                        <h3 className="logo-partner">Logo</h3>
-                        <h3 className="logo-partner">Logo</h3>
-                        <h3 className="logo-partner">Logo</h3>
+                        <div className="col">
+                            <a href="https://hashbx.io/" target="_blank">
+                                <img src={Hashbx} alt="Hashbx logo" className="image-4" />
+                            </a>
+                        </div>
+                        <div className="col">
+                            <a href="https://365.stream/" target="_blank">
+                                <img src={StreamHash} alt="365stream logo" className="image-4" />
+                            </a>
+                        </div>
+                        <div className="col">
+                            <a href="https://coolbitx.com/" target="_blank">
+                                <img src={Coolbit} alt="CoolbitX logo" className="image-4" />
+                            </a>
+                        </div>
+                        <div className="col">
+                            <a href="https://cryptomap.org/" target="_blank">
+                                <img src={Cryptomap} alt="Cryptomap logo" className="image-4" />
+                            </a>
+                        </div>
+                        <div className="col">
+                            <a href="https://voltzstation.com/" target="_blank">
+                                <img src={Voltz} alt="Voltz logo" className="image-4" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
             <Footer />
         </div >
     )
