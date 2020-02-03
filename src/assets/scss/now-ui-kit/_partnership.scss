@@ -91,7 +91,7 @@
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
-    flex-grow: 1;
+    // flex-grow: 1;
     max-width: 100%;
 }
 
@@ -109,8 +109,8 @@
 }
 
 .image-4:hover {
-    // -ms-transform: scale(1.1);
-    // -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
     // filter: grayscale(0%);
 }

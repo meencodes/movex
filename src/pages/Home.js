@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
@@ -43,6 +43,9 @@ import { translate } from 'react-i18next'
 
 const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCtK_Xwc4oyzG8dpLKAIf2tTq06OJCFDtI`;
 const Home = ({ t }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
     return (
         <div id='main'>
 
@@ -286,6 +289,9 @@ const Home = ({ t }) => {
                         <h3 className="heading-4">Card</h3>
                     </div>
                     <div className="text-block-5 card">Coming Soon</div>
+                </div>
+                <div className="card-image-wrapper">
+                    <img src="https://uploads-ssl.webflow.com/5db82a0cfce78613669ce21c/5dc54c8ac4b19937958b8389_Solus_plus_sideview_angle.png" alt="corner of the phone" srcset="https://uploads-ssl.webflow.com/5db82a0cfce78613669ce21c/5dc54c8ac4b19937958b8389_Solus_plus_sideview_angle-p-500.png 500w, https://uploads-ssl.webflow.com/5db82a0cfce78613669ce21c/5dc54c8ac4b19937958b8389_Solus_plus_sideview_angle.png 1233w" sizes="(max-width: 991px) 100vw, 833px" className="image-14 home mobile-none" />
                 </div>
             </div>
 

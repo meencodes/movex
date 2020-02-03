@@ -1,0 +1,33 @@
+.card-image-wrapper {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: -10em;
+    bottom: 0%;
+    overflow: hidden;
+    width: 35em;
+    height: 90vh;
+}
+.image-14 {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: -30px;
+    bottom: 0%;
+    -webkit-transform: translate(0px, -7.5em) scale(1);
+    -ms-transform: translate(0px, -7.5em) scale(1);
+    transform: translate(0px, -7.5em) scale(1);
+}
+.image-14.mobile-none {
+    right: -350px;
+    -webkit-transform: translate(0px, 0em) scale(1);
+    -ms-transform: translate(0px, 0em) scale(1);
+    transform: translate(0px, 0em) scale(1);
+}
+.image-14.home {
+    position: static;
+    right: -600px;
+    -webkit-transform: translate(200px, 138px) scale(1.7);
+    -ms-transform: translate(200px, 138px) scale(1.7);
+    transform: translate(200px, 138px) scale(1.7);
+}
