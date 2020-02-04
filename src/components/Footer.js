@@ -66,10 +66,10 @@ class FooterN extends Component {
                                 </label>
                                 <ul className="ft-directory-column-section-list">
                                     <li className="ft-directory-column-section-item">
-                                        <Link to="/atmbitcoin" className="ft-directory-column-section-link">MoveX for business</Link>
+                                        <Link to="/" className="ft-directory-column-section-link">MoveX for business</Link>
                                     </li>
                                     <li className="ft-directory-column-section-item">
-                                        <Link to="/watch" className="ft-directory-column-section-link">Payment for business</Link>
+                                        <Link to="/" className="ft-directory-column-section-link">Payment for business</Link>
                                     </li>
                                 </ul>
                             </div>
