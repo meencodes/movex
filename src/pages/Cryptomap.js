@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Tick from '../assets/images/cryptomap/Tick.svg';
 import AppStore from '../assets/images/cryptomap/AppStore.svg'
 import AppleStore from '../assets/images/cryptomap/AppleStore.svg'
-import { Fade, Bounce } from 'react-reveal';
+import { Fade } from 'react-reveal';
 
 import Large from '../assets/images/cryptomap/MockUp-Large.png';
 import Medium from '../assets/images/cryptomap/MockUp-Medium.png';
@@ -70,9 +70,9 @@ const Cryptomap = ({ t }) => {
                     <div className="download-headings-wrapper">
                         <div className="upper-headings">
                             <h6 className="heading-2 app">Now Available</h6>
-                            <Bounce>
+                            <Fade bottom>
                                 <h2 className="h2 convenience app">DOWNLOAD CRYPTOMAP APP</h2>
-                            </Bounce>
+                            </Fade>
                             <h3 className="h3 app">Cryptomap app is available for Android and iOS. Click on the link below to download the app through the Google Play Store or the App Store.</h3>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ const Cryptomap = ({ t }) => {
                     <Fade bottom>
                         <h3 className="heading-4 cryptocurrency">join cryptomap</h3>
                     </Fade>
-                    <div className="text-block-7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                    <div className="text-block-7">Search for shops, cafes, accommodations, <br />tourist attractions accept payments with Crypto currencies.</div>
                 </div>
                 <a href="https://cryptomap.org/" className="button-2 w-button" target="_blank">Get Cryptomap</a>
             </div>

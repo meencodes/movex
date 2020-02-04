@@ -14,9 +14,12 @@ import BtmLarge01 from '../assets/images/btm/large-kiosk-01.png';
 import BtmSmall from '../assets/images/btm/small-kiosk.png';
 import BtmSmall01 from '../assets/images/btm/small-kiosk-01.png'
 
+//Card
+import CardLarge from '../assets/images/card/MoveX-Card.png';
+import CardSmall from '../assets/images/card/MoveX-Card-Small.png'
+
 //Map
 import Map from '../components/Map';
-import { Typography, Container } from '@material-ui/core'
 
 //logo parthnership
 import Coolbit from '../assets/images/logo/partnerships/coolbitx_logo.png';
@@ -25,21 +28,17 @@ import Cryptomap from '../assets/images/logo/partnerships/cryptomap_logo.png';
 import Hashbx from '../assets/images/logo/partnerships/hashbx_logo.png';
 import Voltz from '../assets/images/logo/partnerships/voltz_logo.png'
 
-import TrendingUpIcon from '@material-ui/icons/TrendingUpRounded';
-import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRounded';
-import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
-import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
+// import TrendingUpIcon from '@material-ui/icons/TrendingUpRounded';
+// import SupervisorAccountRoundedIcon from '@material-ui/icons/SupervisorAccountRounded';
+// import ForumRoundedIcon from '@material-ui/icons/ForumRounded';
+// import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 
 import '../App.css';
 import '../style.css';
 import '../bootstrap-touch-slider.css';
-import $ from 'jquery';
 
 import { Fade, Bounce } from 'react-reveal';
 import { translate } from 'react-i18next'
-
-// import { Link } from 'react-router-dom';
-// import { Link as Scroll } from 'react-scroll';
 
 const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCtK_Xwc4oyzG8dpLKAIf2tTq06OJCFDtI`;
 const Home = ({ t }) => {
@@ -242,13 +241,13 @@ const Home = ({ t }) => {
                     <Fade bottom>
                         <div className="left-image-wrapper">
                             <img src={BtmLarge} srcSet={`${BtmSmall} 500w,${BtmLarge} 1428w`}
-                                sizes="100vw" alt />
+                                sizes="100vw" alt="Kiosk btm left" />
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className="right-image-wrapper">
                             <img src={BtmLarge01} srcSet={`${BtmSmall01} 500w,${BtmLarge01} 1428w`}
-                                sizes="100vw" alt />
+                                sizes="100vw" alt="kiosk btm right" />
                         </div>
                     </Fade>
                 </div>
@@ -282,7 +281,7 @@ const Home = ({ t }) => {
                 </div>
             </div>
 
-            <div className="section card">
+            <div id="watch" className="section card">
                 <div className="text-wrapper home">
                     <div className="headings-wrapper">
                         <h6 className="heading-3">Our Research</h6>
@@ -291,14 +290,14 @@ const Home = ({ t }) => {
                     <div className="text-block-5 card">Coming Soon</div>
                 </div>
                 <div className="card-image-wrapper">
-                    <img src="https://uploads-ssl.webflow.com/5db82a0cfce78613669ce21c/5dc54c8ac4b19937958b8389_Solus_plus_sideview_angle.png" alt="corner of the phone" srcset="https://uploads-ssl.webflow.com/5db82a0cfce78613669ce21c/5dc54c8ac4b19937958b8389_Solus_plus_sideview_angle-p-500.png 500w, https://uploads-ssl.webflow.com/5db82a0cfce78613669ce21c/5dc54c8ac4b19937958b8389_Solus_plus_sideview_angle.png 1233w" sizes="(max-width: 991px) 100vw, 833px" className="image-14 home mobile-none" />
+                    <img src={CardLarge} srcSet={`${CardSmall} 500w,${CardLarge} 1233w`} alt="corner of the phone" sizes="(max-width: 991px) 100vw, 833px" className="image-14 home mobile-none" />
                 </div>
             </div>
 
             {/* <Section1 maxWidth='xl'> */}
             {/* < section id='about-section' >
                     <div className='about-box'>
-                        <div className='inner-about-box'>
+                        <div className='inner-about-box'>  
 
                             <div className='about-post'>
                                 <div className='about-post-content'>

@@ -115,6 +115,11 @@ a:hover {
   padding: 0 2rem;
   transition: opacity .5s;
 }
+.nav-link-locale {
+  cursor: pointer;
+  padding: 0 2rem 0 0;
+  transition: opacity .5s;
+}
 
 .nav-link:hover {
   opacity: .7;
@@ -124,6 +129,24 @@ a:hover {
   width: 8rem;
   height: 2rem;
   background: url(./assets/images/logo/image_small.svg) center no-repeat;
+}
+.nav-link-locale-en {
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/images/locales/en/16.png);
+  background-position: center;
+}
+.nav-link-locale-th {
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/images/locales/th/16.png);
+  background-position: center;
 }
 
 /* section product */
