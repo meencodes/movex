@@ -4,12 +4,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import './i18n';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 const AppWithRouter = () => (
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+    <HashRouter>
+        {/* <BrowserRouter> */}
+            <App />
+        {/* </BrowserRouter> */}
+    </HashRouter>
 )
 
 ReactDOM.render(

@@ -16,7 +16,7 @@ class Map extends Component {
             data: []
         }
     }
-
+    
     pushDataFromCryptomap(){
         axios.get(`https://api.cryptomap.org/api/stores/on_map/pearl`).then((res) => {
             let obj = res.data.store_data
@@ -42,6 +42,7 @@ class Map extends Component {
                             lat: parseFloat(item.lat),
                             lng: parseFloat(item.lon)
                         }}
+                        title={item.store_name}
 
                         icon={{
                             url: logo,

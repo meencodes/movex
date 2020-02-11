@@ -49,6 +49,8 @@ class Header extends Component {
     }
   };
 
+  
+
   render() {
     return (
 
@@ -73,27 +75,27 @@ class Header extends Component {
             <ul className="nav-list nav-list-larger">
               <li className="nav-item nav-item-hidden">
                 <Scroll to='main' spy={true} smooth={true} offset={0} duration={1500} className="action">
-                  <Link to="/" className="nav-link nav-link-movex" />
+                  <Link to="/" className="nav-link nav-link-movex" title="Home"/>
                 </Scroll>
               </li>
 
               <li className="nav-item">
-                <Link to="/atmbitcoin" className="nav-link">Kiosk BTM</Link>
+                <Link to="/atmbitcoin" className="nav-link" title="Kiosk ATM">Kiosk BTM</Link>
               </li>
               <li className="nav-item">
-                <Link to="/watch" className="nav-link">Smart Watch</Link>
+                <Link to="/watch" className="nav-link" title="Smart Watch">Smart Watch</Link>
               </li>
               <li className="nav-item">
                 <Scroll to='watch' spy={true} smooth={true} offset={0} duration={1500} className="action">
-                  <Link to="/" className="nav-link">Card</Link>
+                  <Link to="/" className="nav-link" title="Coming Soon">MoveX Card</Link>
                   {/* <Link to="/card" className="nav-link">Card</Link> */}
                 </Scroll>
               </li>
               <li className="nav-item">
-                <Link to="/cryptomap" className="nav-link">Cryptomap</Link>
+                <Link to="/cryptomap" className="nav-link" title="Cryptomap">Cryptomap</Link>
               </li>
               <li className="nav-item">
-                <Link to="/blockchain" className="nav-link">Blockchain</Link>
+                <Link to="/blockchain" className="nav-link" title="Blockchain">Blockchain</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link-locale nav-link-locale-en" title="United States" onClick={() => handleClick('en')} />

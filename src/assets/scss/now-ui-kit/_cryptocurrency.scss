@@ -405,6 +405,16 @@ h4 {
     line-height: 34px;
     text-align: left;
 }
+.text-block-5.cryptomap {
+    width: auto;
+    max-width: 680px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2px;
+    padding-left: 0px;
+    font-family: Futuraptbook, sans-serif;
+    text-align: center;
+}
 .features {
     position: relative;
     display: -webkit-box;
@@ -506,6 +516,12 @@ h4 {
         font-size: 16px;
         line-height: 27px;
     }
+    .text-block-5.cryptomap {
+        padding-left: 0px;
+        text-align: left;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -561,6 +577,14 @@ h4 {
     .div-block-9 {
         border: 1px none #000;
     }
+    .text-block-5.cryptomap {
+        width: 80%;
+        margin-top: -66px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        padding-left: 0px;
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -595,6 +619,12 @@ h4 {
     }
     .heading-4.maintenace {
         line-height: 1.2em;
+    }
+    .text-block-5.cryptomap {
+        padding-top: 10px;
+        padding-left: 0px;
+        font-size: 16px;
+        line-height: 27px;
     }
 }
 

@@ -7,7 +7,7 @@ class FooterN extends Component {
         return (
             <footer className="global-footer">
                 <div className="footer-content">
-                    <section className="footer-info"><img src={logo}/></section>
+                    <section className="footer-info"><img src={logo} /></section>
                     <nav className="footer-directory">
 
                         {/* Content MoveX */}
@@ -44,8 +44,9 @@ class FooterN extends Component {
                         </div>
 
                         <div className="ft-directory-column">
+                            <input className="ft-directory-column-section-state" type="checkbox" id="ft-directory-column-section-state-services" />
                             <div className="ft-directory-column-section">
-                                <label className="ft-directory-column-section-label">
+                                <label className="ft-directory-column-section-label" for="ft-directory-column-section-state-services">
                                     <h3 className="ft-directory-column-section-title">Services</h3>
                                 </label>
                                 <ul className="ft-directory-column-section-list">
@@ -60,8 +61,9 @@ class FooterN extends Component {
                         </div>
 
                         <div className="ft-directory-column">
+                            <input className="ft-directory-column-section-state" type="checkbox" id="ft-directory-column-section-state-business" />
                             <div className="ft-directory-column-section">
-                                <label className="ft-directory-column-section-label">
+                                <label className="ft-directory-column-section-label" for="ft-directory-column-section-state-business">
                                     <h3 className="ft-directory-column-section-title">For Business</h3>
                                 </label>
                                 <ul className="ft-directory-column-section-list">

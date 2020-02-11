@@ -44,4 +44,18 @@
     .col-center {
         margin-left: 5%;
     }
+    .maps-section {
+        margin-top: -35%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .maps-section {
+        margin-top: -50%;
+    }
+}
+@media screen and (max-width: 479px) {
+    .maps-section {
+        margin-top: -65%;
+    }
 }

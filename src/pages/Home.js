@@ -262,9 +262,11 @@ const Home = ({ t }) => {
 
             <div className="black-section">
                 <div className="black-image-wrapper">
-                    <img
-                        src={Large} srcSet={`${Small} 500w, ${Medium} 800w,${Large} 1801w`}
-                        sizes="100vw" alt="" className="image-13" />
+                    <Fade bottom>
+                        <img
+                            src={Large} srcSet={`${Small} 500w, ${Medium} 800w,${Large} 1801w`}
+                            sizes="100vw" alt="" className="image-13" />
+                    </Fade>
                 </div>
                 <div className="black-text-wrapper black">
                     <Fade bottom>
@@ -285,7 +287,7 @@ const Home = ({ t }) => {
                 <div className="text-wrapper home">
                     <div className="headings-wrapper">
                         <h6 className="heading-3">Our Research</h6>
-                        <h3 className="heading-4">Card</h3>
+                        <h3 className="heading-4">MoveX Card</h3>
                     </div>
                     <div className="text-block-5 card">Coming Soon</div>
                 </div>
@@ -381,23 +383,34 @@ const Home = ({ t }) => {
             {/* </Section1> */}
 
             <div className="cryptomap-section">
-                {/* <div className="image-text-wrapper home">
-                        Cryptomap
-                    </div> */}
-
                 <div className="section Dark">
-
+                    <div className="feature-wrapper spec">
+                        <div className="text-wrapper spec _2">
+                            <Fade bottom>
+                                <div className="spec-heading">
+                                    <h6 className="heading-3 left white">Get Cryptomap</h6>
+                                    <h3 className="heading-4 tech-spec _1 spec">Cryptomap</h3>
+                                </div>
+                            </Fade>
+                        </div>
+                        <div className="text-block-5 cryptomap">
+                            Search for shops, cafes, accommodations, tourist attractions accept payments with Crypto currencies.
+                        </div>
+                        {/* <a href="https://cryptomap.org/" className="button-2 w-button" target="_blank">Get Cryptomap</a> */}
+                    </div>
                 </div>
                 <div className="maps-section">
                     <div className="wrapper-maps col-center">
-                        <div className="cryptomap-maps">
-                            <Map
-                                googleMapURL={mapURL}
-                                containerElement={<div className="map-overview" />}
-                                mapElement={<div style={{ height: '100%' }} />}
-                                loadingElement={<p>Movex</p>}
-                            />
-                        </div>
+                        <Fade bottom>
+                            <div className="cryptomap-maps">
+                                <Map
+                                    googleMapURL={mapURL}
+                                    containerElement={<div className="map-overview" />}
+                                    mapElement={<div style={{ height: '100%' }} />}
+                                    loadingElement={<p>Movex</p>}
+                                />
+                            </div>
+                        </Fade>
                     </div>
                 </div>
             </div>

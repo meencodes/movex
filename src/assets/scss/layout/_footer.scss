@@ -90,7 +90,7 @@ $color: #d3d3d3;
     border: 0;
 }
 .global-footer .ft-directory-column-section-title {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.33337;
     font-weight: 400;
     letter-spacing: -.01em;
@@ -98,6 +98,61 @@ $color: #d3d3d3;
     margin-right: 20px;
     margin-bottom: .8em;
 }
+
+////////// Dropdow //////////////////////
+.global-footer .ft-directory-column-section {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: auto;
+}
+.global-footer .ft-directory-column-section-anchor {
+    display: block;
+}
+.global-footer .ft-directory-column-section-title::after {
+    content: '+';
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -2px;
+    margin-right: 8px;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.global-footer .ft-directory-column-section-state:checked+.ft-directory-column-section .ft-directory-column-section-title::after {
+    -webkit-transform: rotate(45deg) scale(1.08);
+    transform: rotate(45deg) scale(1.08);
+}
+.global-footer .ft-directory-column-section-state:checked+.ft-directory-column-section .ft-directory-column-section-list {
+    position: static;
+    visibility: visible;
+    z-index: 1;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.global-footer .ft-directory-column-section-list {
+    margin: 0;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    z-index: -1;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+}
+///////////////////////////////////////
+
 .global-footer .ft-directory-column-section-list {
     margin-right: 20px;
     list-style: none;
