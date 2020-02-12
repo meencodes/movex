@@ -15,7 +15,7 @@ class Header extends Component {
 
     this.state = {
       pos: window.pageYOffset,
-      visible: true
+      visible: true,
     };
   }
 
@@ -48,9 +48,7 @@ class Header extends Component {
       });
     }
   };
-
-
-
+  
   render() {
     return (
 
