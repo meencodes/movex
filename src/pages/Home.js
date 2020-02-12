@@ -289,7 +289,7 @@ const Home = ({ t }) => {
                         <h6 className="heading-3">Our Research</h6>
                         <h3 className="heading-4">MoveX Card</h3>
                     </div>
-                    <div className="text-block-5 card">Coming Soon</div>
+                    <div className="text-block-5 home card">Coming Soon</div>
                 </div>
                 <div className="card-image-wrapper">
                     <img src={CardLarge} srcSet={`${CardSmall} 500w,${CardLarge} 1233w`} alt="corner of the phone" sizes="(max-width: 991px) 100vw, 833px" className="image-14 home mobile-none" />

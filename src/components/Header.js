@@ -49,7 +49,7 @@ class Header extends Component {
     }
   };
 
-  
+
 
   render() {
     return (
@@ -75,7 +75,7 @@ class Header extends Component {
             <ul className="nav-list nav-list-larger">
               <li className="nav-item nav-item-hidden">
                 <Scroll to='main' spy={true} smooth={true} offset={0} duration={1500} className="action">
-                  <Link to="/" className="nav-link nav-link-movex" title="Home"/>
+                  <Link to="/" className="nav-link nav-link-movex" title="Home" />
                 </Scroll>
               </li>
 
